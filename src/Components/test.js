@@ -1,1 +1,0 @@
-export const test = 'globale component like navbar sidbar';
