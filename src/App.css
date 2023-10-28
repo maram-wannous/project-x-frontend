@@ -1,4 +1,23 @@
-body{
+/* start global rules */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     background: #F0F6FF;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+  }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
