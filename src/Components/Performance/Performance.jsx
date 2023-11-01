@@ -1,8 +1,3 @@
-// export default function Performance(){
-//     return (
-//         <div>Performance</div>
-//     )
-// }
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import './Performance.css';
 
@@ -52,11 +47,6 @@ const Performance = () => {
     return (
         <div>
             <h2>Line Chart Example</h2>
-                {/*<div className="custom-labels">*/}
-                {/*    <div className="label">Achieved</div>*/}
-                {/*    <div className="label">Target</div>*/}
-                {/*</div>*/}
-
             <div className="custom-chart">
             <LineChart
                 width={800}

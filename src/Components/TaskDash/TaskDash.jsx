@@ -31,9 +31,9 @@ export function TaskDash() {
     const options = {
         plugins: {
             datalabels: {
-                color: 	'black',//'#FFFFFF' ,//'white',
-                anchor: 'end', // Adjust the anchor point
-                align: 'end', // Adjust the alignment
+                color: 	'black',
+                anchor: 'end',
+                align: 'end',
                 font: {
                     weight: 'bold', // Increase font weight
                 },
@@ -44,8 +44,6 @@ export function TaskDash() {
         },
         legend: {
             position: 'right', // Move the legend to the right
-      /*  },
-    };*/
             labels: {
                 generateLabels: function (chart) {
                     const { data } = chart;
@@ -74,19 +72,4 @@ export function TaskDash() {
         },
     };
     return <div className="w-25"><Pie data={data} options={options}/></div>;
-    /*return (<div className="d-flex justify-content-between">
-        <div className="w-75">
-            <Pie data={data} options={options} />
-        </div>
-        <div className="w-25">
-            <div className="options-list">
-                <p>Options:</p>
-                <ul>
-                    <li>Color: White</li>
-                    <li>Font Weight: Bold</li>
-                    <li>Position: Right</li>
-                </ul>
-            </div>
-        </div>
-    </div>);*/
 }
