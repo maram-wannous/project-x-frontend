@@ -1,0 +1,11 @@
+.RA-widthImg{
+    width: 38px;/*589px;//36.8125rem;*/
+    height: 29.6px;/*390px;//24.375rem;*/
+    flex-shrink: 0;
+}
+.RA-borderRadius{
+border-radius: 1rem;
+}
+.RA-bg{
+    background: #FFF;
+}
