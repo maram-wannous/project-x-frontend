@@ -1,5 +1,5 @@
 export default function AdminProjects(){
     return (
-        <div>Admin Dashboard</div>
+        <div>Admin projects</div>
     )
 }
