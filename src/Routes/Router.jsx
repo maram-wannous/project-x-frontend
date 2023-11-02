@@ -7,6 +7,14 @@ import GuardedRoutes from "./GuardedRoutes"
 import Profile from "../Modules/Profile/Pages/Profile";
 import Performance from "../Modules/Performance/Pages/Performance";
 import WorkLog from "../Modules/WorkLog/Pages/WorkLog";
+import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects";
+import UpdateProject from "../Modules/Admin/AdminProjects/Pages/UpdateProject";
+import AdminViewProjects from "../Modules/Admin/AdminProjects/Pages/AdminViewProjects";
+import AddProject from "../Modules/Admin/AdminProjects/Pages/AddProject";
+import ViewUsers from "../Modules/Admin/Users/Pages/ViewUsers";
+import AddUser from "../Modules/Admin/Users/Pages/AddUser";
+import UpdateUser from "../Modules/Admin/Users/Pages/UpdateUser";
+import UpdateProfile from "../Modules/Profile/Pages/UpdateProfile";
 
 const isAuthenticated= true;
 
@@ -33,6 +41,10 @@ export const routes = [
                 element: <Profile/>,
             },
             {
+                path: 'updateprofile',
+                element: <UpdateProfile/>,
+            },
+            {
                 path: 'performance',
                 element: <Performance/>,
             },
@@ -40,10 +52,40 @@ export const routes = [
                 path: 'worklog',
                 element: <WorkLog/>,
             },
+            // Admin pages
+            {
+                path: 'adminprojects',
+                element: <AdminProjects/>,
+            },
+            {
+                path: 'projects',
+                element: <AdminViewProjects/>,
+            },
+            {
+                path: 'projects/add',
+                element: <AddProject/>,
+            },
+            {
+                path: 'projects/update',
+                element: <UpdateProject/>,
+            },
+            {
+                path: 'users',
+                element: <ViewUsers/>,
+            },
+            {
+                path: 'users/add',
+                element: <AddUser/>,
+            },
+            {
+                path: 'users/update',
+                element: <UpdateUser/>,
+            },
+
             // {
             //     element: <RequireAuth allowedRole={'admin'}/>,
             //     children: [
-            //         {
+            //         {       هون بحط الصفحات الخاصة بالأدمن
                         
             //         }                  
             //     ]
@@ -51,7 +93,7 @@ export const routes = [
             // {
             //     element: <RequireAuth allowedRole={'user'}/>,
             //     children: [
-            //         {
+            //         {   هون بحط الصفحات الخاصة باليوزر
                        
             //         }
             //     ]

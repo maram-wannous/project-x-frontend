@@ -1,5 +1,5 @@
 export default function AddUser(){
     return (
-        <div>Admin Dashboard</div>
+        <div>Add User</div>
     )
 }
