@@ -1,5 +1,5 @@
 export default function UpdateProject(){
     return (
-        <div>Admin Dashboard</div>
+        <div>Admin Update projects</div>
     )
 }

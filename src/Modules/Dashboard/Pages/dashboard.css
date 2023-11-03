@@ -1,0 +1,8 @@
+.mr-dashboard {
+    position: relative;
+    min-height: 100vh;
+    background: #F0F6FF;
+}
+.mr-outlet {
+    padding-top: 20px;
+}

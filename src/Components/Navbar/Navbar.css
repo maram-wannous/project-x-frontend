@@ -1,0 +1,151 @@
+.sa-nav {
+    background: #FFF;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    height: 70px;
+    width: 100%;
+}
+.sa-form {
+    border-radius: 6px;
+    border: 1px solid #9A93B3;
+    background: #FEFEFE;
+    width: 26.0625rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    padding: 5px 7px;
+    gap: 5px;
+}
+.sa_searchIcon {
+    font-size: 22px;
+    color: #787486;
+}
+.sa_searchIcon2 {
+    font-size: 30px;
+    color: rgb(27, 27, 27);
+}
+.sa_searchText {
+    color: #787486;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    outline: none;
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+.sa_dropDown {
+    position: absolute;
+    top: 100%;
+    z-index: 222;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+.sa_dropDown::before {
+    content: '';
+    position: absolute;
+    top: -0.69rem;
+    right: 13.75rem;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.sa_dropDown.active {
+    opacity: 1;
+    display: block !important;
+}
+.sa_dropDown.inactive {
+    opacity: 0;
+    display: none !important;
+}
+.sa_notiPic {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+.sa_notiContent {
+    color: var(--dmv-black, #23262F);
+    font-family: Manrope;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.sa_notiDate {
+    color: #708099;
+    font-family: Manrope;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.sa_countNotif {
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 50%;
+    background-color: #FF8500;
+    position: absolute;
+    left: 15px;
+    top: 2px;
+    z-index: 22;
+}
+.sa_notifIcon {
+    width: 2.5625rem;
+    height: 2.1875rem;
+}
+.sa_name , .sa_info {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.sa_name {
+    color: #0D062D;
+    font-size: 1rem;
+}
+.sa_info {
+    color: #787486;
+    font-size: 0.875rem;
+}
+.sa_personPic {
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+
+@media (max-width : 920px) {
+    .sa-form {
+        display: none;
+    }
+}
+@media (min-width : 920px) {
+    .sa_searchIcon2 {
+        display: none;
+    }
+}
+@media (max-width : 600px) {
+    .sa_name , .sa_info {
+        display: none;
+    }
+    .sa_dropDown {
+       right: 2%;
+    }
+    .sa_dropDown::before {
+        right: 7.2rem;
+    }
+}
