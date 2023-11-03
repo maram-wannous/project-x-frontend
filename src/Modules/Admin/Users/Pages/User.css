@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
+.RA-pageWidth{
+    width: calc(100% - 19.625rem);
+}
+.RA-bgWhite{
+    background: white;
+}
+.RA-bgBlue{
+    background: #F0F6FF;
+}
+.RA-HeaderStyle{
+    color: #9A93B3;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.RA-addWidthHeight{
+     max-height:100%; /*93.375rem !important;*/
+     max-width: 100%; /*45.375rem !important;*/
+
+}
+.RA-Field{
+    width: 30.75rem !important;
+    height: 3.25rem !important;
+    border-radius: 0.9375rem !important;
+    border: 1.5px solid #DDD !important;
+    margin-left: 2.31rem;
+}
+.RA-Label{
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.40625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 1.63rem 0.62rem 0 2.31rem;
+}
+.RA-Label-SM{
+    font-weight: 400 !important;
+    width: 10.5625rem;
+    height: 1.75rem;
+}
+.RA-FieldDev{
+    display: flex;
+    width: 15.4375rem;
+    height: 3.0625rem;
+    padding: 0.625rem;
+    border-radius: 0.75rem;
+    margin-left: 2.31rem;
+    border: 1.5px solid #DDD !important;
+
+}
+.RA-fsLabel{
+    font-size: 1.40625rem;
+}
+/*.RA-PaddingBottom{
+    padding-bottom: 20.63rem !important;
+}*/
+.RA-BorderRadius{
+    border-radius: 0.9375rem !important;
+}
+.RA-imgStyle{
+    width: 10.75rem;
+    height: 10.08131rem;
+    flex-shrink: 0;
+    border-radius: 12.5rem;
+    border: 1px solid var(--orange);
+    background-repeat: no-repeat;
+    background-size: cover;
+  /*  margin: 5.63rem  0 0 10.19rem;*/
+}
+.RA-MarginBox{
+    margin: 6rem 2.06rem 17rem 1.94rem;
+    /*We should replace last number after add Navbar to be  1.94*/
+}
+/*
+.RA-mb{
+    margin-bottom: 20.44rem;
+}*/
