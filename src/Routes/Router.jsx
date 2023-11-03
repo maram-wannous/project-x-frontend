@@ -15,6 +15,7 @@ import ViewUsers from "../Modules/Admin/Users/Pages/ViewUsers";
 import AddUser from "../Modules/Admin/Users/Pages/AddUser";
 import UpdateUser from "../Modules/Admin/Users/Pages/UpdateUser";
 import UpdateProfile from "../Modules/Profile/Pages/UpdateProfile";
+import AdminTasks from "../Modules/Admin/Tasks/Pages/AdminTasks";
 
 const isAuthenticated= true;
 
@@ -68,6 +69,10 @@ export const routes = [
             {
                 path: 'projects/update',
                 element: <UpdateProject/>,
+            },
+            {
+                path: 'tasks',
+                element: <AdminTasks/>,
             },
             {
                 path: 'users',

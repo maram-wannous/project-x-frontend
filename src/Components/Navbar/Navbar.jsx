@@ -13,12 +13,12 @@ export default function Navbar(){
     const [open, setOpen] = useState(false);
 
     return (
-    <nav className="px-4 py-2 d-flex justify-content-between align-items-center bg-white vw-100 position-fixed z-1">
+    <nav className="px-4 py-2 d-flex justify-content-between align-items-center bg-white position-fixed top-0 left-0 z-1 sa-nav">
         <div>
             <MainLogo/>
         </div>
         <div className="d-flex align-items-center gap-3">
-            <form>
+            <form className="sa-form">
                 <FiSearch className="sa_searchIcon" />
                 <input type="search" placeholder="Search for anything..." className="sa_searchText" />
             </form>
