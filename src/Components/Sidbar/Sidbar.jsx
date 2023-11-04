@@ -7,70 +7,90 @@ import { GoProjectRoadmap } from "react-icons/go";
 import { CgPerformance } from "react-icons/cg";
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
 
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 
 export default function Sidbar() {
 
     const [isOpen,setIsOpen] = useState(false);
+    const [windowSize, setWindowSize] = useState({
+        width: undefined
+      });
+      useEffect(() => {
+        function handleResize() {
+          setWindowSize({
+            width: window.innerWidth,
+          });
+        }
+    
+        window.addEventListener("resize", handleResize);
+    
+        handleResize();
+    
+        return () => window.removeEventListener("resize", handleResize);
+      }, []);
 
     return (
-        <div>
-            <div className="sa_sidebar bg-white pt-5" 
-                style={{width: isOpen ? '240px' : 'fit-content'}}>
+            <div className="sa_sidebar bg-white pt-5"
+                style={{
+                    width: windowSize.width < 991 ? (isOpen? '240px' : 'fit-content') : '240px'
+                }}
+            >
                     <NavLink to='' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <BiSolidHome />
-                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        <p className='m-0' 
+                        style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Home</p>
                     </NavLink>
                     <NavLink to='adminprojects' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <RiProjectorFill />
-                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        <p className='m-0' 
+                        style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Project</p>
                     </NavLink>
                     <NavLink to='tasks' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <FaTasks />
-                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        <p className='m-0' 
+                        style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Tasks</p>
                     </NavLink>
                     <NavLink to='worklog' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <GoProjectRoadmap />
-                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        <p className='m-0' 
+                        style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Work Logs</p>
                     </NavLink>
                     <NavLink to='performance' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <CgPerformance />
-                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        <p className='m-0' 
+                       style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Performance</p>
                     </NavLink>
                     <NavLink to='users' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <FaUsers/>
-                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        <p className='m-0' 
+                        style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Users</p>
                     </NavLink>
-                    <div>
-                        <div className="sa_showSidbar position-absolute"
-                         onClick={()=>setIsOpen(!isOpen)}
-                         style={{right: isOpen ? '10px' : '-10px'}}
-                         >
-                            {
-                                isOpen? (<IoIosArrowDropleftCircle/>): (<IoIosArrowDroprightCircle/>)
-                            }
-                        </div>
+
+                    <div className="d-lg-none sa_showSidbar position-absolute"
+                        onClick={()=>setIsOpen(!isOpen)}
+                        >
+                        {
+                            isOpen? (<IoIosArrowDropleftCircle/>): (<IoIosArrowDroprightCircle/>)
+                        }
                     </div>
             </div>
-            
-        </div>
     )
 }
