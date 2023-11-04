@@ -1,8 +1,10 @@
-nav {
+.sa-nav {
     background: #FFF;
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    height: 70px;
+    width: 100%;
 }
-form {
+.sa-form {
     border-radius: 6px;
     border: 1px solid #9A93B3;
     background: #FEFEFE;
@@ -127,7 +129,7 @@ button {
 
 
 @media (max-width : 920px) {
-    form {
+    .sa-form {
         display: none;
     }
 }

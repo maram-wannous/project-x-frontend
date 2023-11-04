@@ -2,74 +2,75 @@ import "./Sidbar.css"
 import { NavLink } from "react-router-dom";
 import { BiSolidHome } from "react-icons/bi";
 import { RiProjectorFill } from "react-icons/ri";
-import { FaTasks } from "react-icons/fa";
+import { FaTasks, FaUsers } from "react-icons/fa";
 import { GoProjectRoadmap } from "react-icons/go";
 import { CgPerformance } from "react-icons/cg";
-import { IoMdSettings } from "react-icons/io";
-import{ FaArrowAltCircleLeft } from "react-icons/fa";
-import{ FaArrowAltCircleRight } from "react-icons/fa";
+import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
+
+import {  useState } from "react";
 
 export default function Sidbar() {
+
+    const [isOpen,setIsOpen] = useState(false);
+
     return (
         <div>
-            <div className="sa_sidebar position-absolute bg-white">
-                <div className="sa_itemSidbar">
-                    <BiSolidHome className="sa_iconSidbar" />
-                    <NavLink className="sa_textSidbar" to='/' style={({ isActive }) => {
-                        return { fontWeight: isActive ? "bold" : "", };
-                    }}>
-                        Home
+            <div className="sa_sidebar bg-white pt-5" 
+                style={{width: isOpen ? '240px' : 'fit-content'}}>
+                    <NavLink to='' className="d-flex align-items-center gap-2 sa_textSidbar"
+                        style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
+                    >
+                        <BiSolidHome />
+                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        >Home</p>
                     </NavLink>
-                </div>
-                <div className="sa_itemSidbar">
-                    <RiProjectorFill className="sa_iconSidbar" />
-                    <NavLink className="sa_textSidbar" to='' style={({ isActive }) => {
-                        return { fontWeight: isActive ? "bold" : "", };
-                    }}>
-                        Project
+                    <NavLink to='adminprojects' className="d-flex align-items-center gap-2 sa_textSidbar"
+                        style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
+                    >
+                        <RiProjectorFill />
+                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        >Project</p>
                     </NavLink>
-                </div>
-                <div className="sa_itemSidbar">
-                    <FaTasks className="sa_iconSidbar" />
-                    <NavLink className="sa_textSidbar" to='' style={({ isActive }) => {
-                        return { fontWeight: isActive ? "bold" : "", };
-                    }}>
-                        Tasks
+                    <NavLink to='tasks' className="d-flex align-items-center gap-2 sa_textSidbar"
+                        style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
+                    >
+                        <FaTasks />
+                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        >Tasks</p>
                     </NavLink>
-                </div>
-                <div className="sa_itemSidbar">
-                    <GoProjectRoadmap className="sa_iconSidbar" />
-                    <NavLink className="sa_textSidbar" to='' style={({ isActive }) => {
-                        return { fontWeight: isActive ? "bold" : "", };
-                    }}>
-                        Work Logs
+                    <NavLink to='worklog' className="d-flex align-items-center gap-2 sa_textSidbar"
+                        style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
+                    >
+                        <GoProjectRoadmap />
+                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        >Work Logs</p>
                     </NavLink>
-                </div>
-                <div className="sa_itemSidbar">
-                    <CgPerformance className="sa_iconSidbar" />
-                    <NavLink className="sa_textSidbar" to='' style={({ isActive }) => {
-                        return { fontWeight: isActive ? "bold" : "", };
-                    }}>
-                        Performance
+                    <NavLink to='performance' className="d-flex align-items-center gap-2 sa_textSidbar"
+                        style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
+                    >
+                        <CgPerformance />
+                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        >Performance</p>
                     </NavLink>
-                </div>
-                <div className="sa_itemSidbar">
-                    <IoMdSettings className="sa_iconSidbar" />
-                    <NavLink className="sa_textSidbar" to='' style={({ isActive }) => {
-                        return { fontWeight: isActive ? "bold" : "", };
-                    }}>
-                        Settings
+                    <NavLink to='users' className="d-flex align-items-center gap-2 sa_textSidbar"
+                        style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
+                    >
+                        <FaUsers/>
+                        <p className='m-0' style={{display: isOpen ? 'block' : 'none'}}
+                        >Users</p>
                     </NavLink>
-                </div>
+                    <div>
+                        <div className="sa_showSidbar position-absolute"
+                         onClick={()=>setIsOpen(!isOpen)}
+                         style={{right: isOpen ? '10px' : '-10px'}}
+                         >
+                            {
+                                isOpen? (<IoIosArrowDropleftCircle/>): (<IoIosArrowDroprightCircle/>)
+                            }
+                        </div>
+                    </div>
             </div>
-            <div>
-                <div className="sa_showSidbar position-absolute">
-                    <FaArrowAltCircleLeft />
-                </div>
-                <div className="sa_showSidbar position-absolute">
-                    <FaArrowAltCircleRight />
-                </div>
-            </div>
+            
         </div>
     )
 }

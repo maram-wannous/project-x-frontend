@@ -1,0 +1,13 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*Variables*/
+:root{
+--orange:#FF8500;
+}
+
+.colorOrange{
+    color: var(--orange) !important;
+}
