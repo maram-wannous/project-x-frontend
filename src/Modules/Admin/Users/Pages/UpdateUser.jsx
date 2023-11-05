@@ -1,5 +1,7 @@
+import Profile from "../../../../assets/Foto.png";
+
 export default function UpdateUser(){
     return (
-        <div>UpdateUser User</div>
+        <div></div>
     )
 }

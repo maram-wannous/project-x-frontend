@@ -10,7 +10,7 @@ export default function ViewUsers() {
                 <div className="table-responsive" style={{maxHeight: "300px"}}>
                     <table className="table RA-display-7 table  colorGray fa-2x">
                         <thead>
-                        <tr className="py-5 align-middle ">
+                        <tr className="py-5 align-middle RA-header">
                             <th scope="col" className="colorDarkGreen">First</th>
                             <th scope="col" className="colorDarkGreen">Last</th>
                             <th scope="col" className="colorDarkGreen">Email</th>
@@ -179,7 +179,7 @@ export default function ViewUsers() {
                     </table>
                 </div>
                 <div className="d-flex justify-content-end">
-                <button type="button" className="btn btn-primary mx-4 my-4 px-2 py-2 display-4 colorBgGreen">Add Users</button>
+                <button type="button" className="btn btn-primary mx-4 my-4 px-2 py-2 display-4 colorBgGreen fontSize2Rem border-0">Add Users</button>
                 </div>
             </div>
         </div>
