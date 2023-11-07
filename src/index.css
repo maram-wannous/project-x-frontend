@@ -1,0 +1,9 @@
+/*Variables*/
+:root{
+    --orange:#FF8500;
+    }
+    
+    .colorOrange{
+        color: var(--orange) !important;
+    }
+    
