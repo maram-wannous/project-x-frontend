@@ -1,8 +1,7 @@
-.sa_sidebar {
-    position: sticky;
+.sa_sidebar{
+    position: fixed;
     top: 70px;
     left: 0;
-    width: fit-content;
     height: 100vh;
 }
 .sa_textSidbar {
@@ -22,7 +21,7 @@
 }
 .sa_showSidbar {
     top: 5px;
-    right: -10px;
+    right: 20px;
     color: #FF8500;
     font-size: 25px;
     cursor: pointer;

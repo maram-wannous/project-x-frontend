@@ -31,12 +31,9 @@ export function TaskDash() {
     const options = {
         plugins: {
             datalabels: {
-                color: 	'black',
-                anchor: 'end',
-                align: 'end',
-                font: {
-                    weight: 'bold', // Increase font weight
-                },
+                color: 	'white',
+                anchor: 'center',
+                align: 'center',
                 formatter: (value, context) => {
                     return ((value / context.chart.data.datasets[0].data.reduce((a, b) => a + b) * 100).toFixed(1) + '%');
                 },
@@ -68,7 +65,7 @@ export function TaskDash() {
                     }
                     return [];
                 },
-            },
+            },  
         },
     };
     return <div className="w-25"><Pie data={data} options={options}/></div>;
