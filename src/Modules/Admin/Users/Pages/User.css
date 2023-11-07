@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
-.RA-display-7{
+/* .RA-display-7{
     font-size: 1.5rem ;
-}
+} */
 .RA-bgWhite{
     background: white;
 }
@@ -14,7 +14,6 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    margin: 2.56rem 0 3.06rem 0.39rem;
 }
 .RA-addWidthHeight{
      max-height:100%;
@@ -82,6 +81,12 @@
 .fontSize2Rem{
     font-size: 2rem;
 }
+
+.RA-table-icon {
+    cursor: pointer;
+    font-size: 18px;
+}
+
 /*
 .RA-mb{
     margin-bottom: 20.44rem;
