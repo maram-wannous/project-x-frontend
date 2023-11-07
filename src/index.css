@@ -1,9 +1,25 @@
+
 /*Variables*/
 :root{
-    --orange:#FF8500;
-    }
-    
-    .colorOrange{
-        color: var(--orange) !important;
-    }
-    
+--orange:#FF8500;
+--red:red;
+--green:#14a44d;
+--darkgray:#4f4f4f;
+}
+/*----------------Color-----------------*/
+.colorOrange{
+    color: var(--orange) !important;
+}
+.colorRed{
+    color: var(--red) !important;
+}
+.colorGreen{
+    color: var(--green) !important;
+}
+.colorDarkGreen{
+    color: var(--darkgray) !important;
+}
+/*----------------BACKGROUND-----------------*/
+.colorBgGreen{
+    background-color: var(--green) !important;
+}

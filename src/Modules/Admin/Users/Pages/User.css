@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
-.RA-pageWidth{
-    width: calc(100% - 19.625rem);
+.RA-display-7{
+    font-size: 1.5rem ;
 }
 .RA-bgWhite{
     background: white;
@@ -14,10 +14,11 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin: 2.56rem 0 3.06rem 0.39rem;
 }
 .RA-addWidthHeight{
-     max-height:100%; /*93.375rem !important;*/
-     max-width: 100%; /*45.375rem !important;*/
+     max-height:100%;
+     max-width: 100%;
 
 }
 .RA-Field{
@@ -43,7 +44,7 @@
 }
 .RA-FieldDev{
     display: flex;
-    width: 15.4375rem;
+    width: 11.4375rem !important;/*15.4375rem;*/
     height: 3.0625rem;
     padding: 0.625rem;
     border-radius: 0.75rem;
@@ -54,9 +55,6 @@
 .RA-fsLabel{
     font-size: 1.40625rem;
 }
-/*.RA-PaddingBottom{
-    padding-bottom: 20.63rem !important;
-}*/
 .RA-BorderRadius{
     border-radius: 0.9375rem !important;
 }
@@ -68,13 +66,41 @@
     border: 1px solid var(--orange);
     background-repeat: no-repeat;
     background-size: cover;
-  /*  margin: 5.63rem  0 0 10.19rem;*/
 }
 .RA-MarginBox{
-    margin: 6rem 2.06rem 17rem 1.94rem;
-    /*We should replace last number after add Navbar to be  1.94*/
+    margin: 4% 2% 17% 1%;
+    padding:4% 2% 6% 1% ;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+}
+.RA-header th {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Adjust this to match your background color */
+    z-index: 2; /* Ensure header is above other content */
+}
+.fontSize2Rem{
+    font-size: 2rem;
 }
 /*
 .RA-mb{
     margin-bottom: 20.44rem;
 }*/
+@media (min-width: 1103px) {
+    .RA-Field{
+        width: 29.75rem !important;
+          }
+    .RA-FieldDev{
+        width: 14.4375rem;
+    }
+}
+@media (max-width: 1103px) {
+    .RA-Field{
+        width: 25.75rem !important;
+    }
+}
+@media (max-width: 987px) {
+    .RA-FieldDev{
+        width: 25.75rem!important;
+    }
+}
