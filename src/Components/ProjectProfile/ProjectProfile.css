@@ -1,0 +1,139 @@
+/* start global rules */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #F0F6FF;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+  }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects{
+    width: 447px; 
+    height: 627px;
+     background: #FDFEFF;
+      border-radius: 20px
+    
+}
+.Projects-title{
+    width: 86.61px;
+     height: 34.67px; 
+    left: 1409.53px;
+     top: 152.67px;
+     position: absolute;
+     text-align: center;
+     color: #4B4B4B; 
+    font-size: 20px; 
+    font-family: Roboto; 
+    font-weight: 700;
+     line-height: 24px;
+    letter-spacing: 0.20px;
+    word-wrap: break-word
+}
+
+.projects-View{
+    width: 71.24px; 
+    height: 34.67px;
+     left: 1709.85px; 
+     top: 152.67px;
+    position: absolute;
+     text-align: center;
+      color: #FF8500; 
+      font-size: 17px;
+       font-family: Roboto;
+        font-weight: 700; 
+        line-height: 24px;
+         letter-spacing: 0.20px; 
+         word-wrap: break-word;
+}
+
+.title-image{
+    width: 103px;
+     height: 29px;
+      left: 1410px; 
+      top: 333px;
+       position: absolute; 
+       text-align: center; 
+       color: #4B4B4B;
+        font-size: 14px;
+         font-family: Roboto; 
+         font-weight: 400;
+          line-height: 21px; 
+          letter-spacing: 0.20px; 
+          word-wrap: break-word
+}
+
+.image-project{
+    width: 92px;
+     height: 95px; 
+      position: absolute;
+       border-radius: 10px
+}
+.emo{
+    left: 1414px; top: 224px;
+}
+.tim{
+    left: 1414px; top: 384px;}
+    .halloween{
+    left: 1414px; top: 544px;
+}
+.spacky{
+    left: 1550px; top: 224px;
+}
+.dark_art{
+    left: 1550px; top: 384px;
+}
+.gothic{
+    left: 1550px; top: 544px;
+}
+.happy{
+    left: 1685px; top: 224px;
+}
+.v4m{
+    left: 1685px; top: 384px;
+}
+.art{
+    left: 1685px; top: 544px;
+}
+
+
+.emo-p{
+    left: 1410px; top: 333px;
+}
+.tim-p{
+    left: 1410px; top: 493px;}
+    .halloween-p{
+        left:  1410px; top: 646px;
+}
+.spacky-p{
+    left: 1546px; top: 333px;
+}
+.dark_art-p{
+    left: 1546px;top: 493px;
+}
+.gothic-p{
+    left: 1546px; top: 653px;
+}
+.happy-p{
+    left: 1678px;  top: 333px;
+}
+.v4m-p{
+    left: 1678px; top: 493px;
+}
+.art-p{
+    left: 1678px; top: 653px;
+}

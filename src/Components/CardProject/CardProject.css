@@ -1,0 +1,106 @@
+.sa_cardProject {
+    width: 40.10656rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background-color: #FFF;
+    padding: 1.64rem 1.09rem;
+}
+
+.sa_ProjectName {
+    color: #000;
+    font-size: 2.7625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.sa_FiEdit {
+    width: 2.5625rem;
+    height: 2.51744rem;
+    flex-shrink: 0;
+}
+
+.sa_buttOfftrack {
+    text-align: center;
+    color: #BD1E1E;
+    font-size: 1.45rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 7rem;
+    height: 3.1rem;
+    border-radius: 0.25rem;
+    background: rgba(194, 131, 131, 0.20);
+}
+
+.sa_CardText {
+    color: #424242;
+    font-size: 1.69rem;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 35.25rem;
+}
+
+.sa_BsHourglassBottom {
+    width: 1.67613rem;
+    height: 2.0625rem;
+    color: #E05959;
+}
+
+.sa_DateProject {
+    color: #D62222;
+    font-size: 1.5rem;
+    font-style: normal;
+    line-height: normal;
+}
+
+.sa_SlFolderAlt {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    color: #5C5967;
+}
+
+.sa_imgTeam,
+.sa_CardImageTeam {
+    width: 4.159rem;
+    height: 4.159rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+
+}
+
+.sa_CardImageTeam2 {
+    left: 19%;
+    z-index: 113;
+}
+
+.sa_CardImageTeam3 {
+    left: 40%;
+    z-index: 333;
+}
+
+.sa_CardImageTeam4 {
+    left: 35%;
+    z-index: 333;
+}
+
+.sa_CardImageTeam5 {
+    left: 30%;
+    z-index: 333;
+}
+
+.sa_CardImageTeam6 {
+    left: 25%;
+    z-index: 333;
+}
+
+.sa_14_issues {
+    color: #5C5967;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
