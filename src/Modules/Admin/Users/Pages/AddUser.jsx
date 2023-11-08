@@ -15,7 +15,7 @@ export default function AddUser() {
                             </input>
                         </div>
                         <div className="d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
-                            <label htmlFor="phone" className="RA-Label">Phone No.</label>
+                            <label htmlFor="phone" className="RA-Label text-center">Phone No.</label>
                             <input type="number" className="form-control RA-Field" id="phone"
                                    aria-describedby="phone">
                             </input>
@@ -27,7 +27,7 @@ export default function AddUser() {
                             </input>
                         </div>
 
-                        <div className=" d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
+                        <div className="d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                             <label htmlFor="password" className="RA-Label RA-fsLabel">Password</label>
                             <input type="password" className="form-control RA-Field" id="password"
                                    aria-describedby="emailHelp">

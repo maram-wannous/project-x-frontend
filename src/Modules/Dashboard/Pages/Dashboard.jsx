@@ -3,9 +3,7 @@ import Navbar from "../../../Components/Navbar/Navbar";
 import Sidbar from "../../../Components/Sidbar/Sidbar";
 import './dashboard.css'
 
-
-
-export default function Dasboard(){
+export default function Dashboard(){
 
     return(
         <div className="mr-dashboard">
