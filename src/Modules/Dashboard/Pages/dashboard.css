@@ -1,8 +1,15 @@
 .mr-dashboard {
     position: relative;
-    min-height: 100vh;
     background: #F0F6FF;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 .mr-outlet {
-    padding-top: 20px;
+    padding-top: 100px;
+    padding-left: 250px;
+}
+@media(max-width: 991px) {
+    .mr-outlet{
+        padding: 90px;
+    }
 }

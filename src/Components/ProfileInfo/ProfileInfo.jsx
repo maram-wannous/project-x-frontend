@@ -1,5 +1,6 @@
+
 export default function ProfileInfo(){
     return (
-        <div>ProfileInfo</div>
+      <div>Profile Info</div>
     )
 }

@@ -1,10 +1,11 @@
 import './User.css';
 import Profile from '../../../../assets/Foto.png';
+import { Link } from 'react-router-dom';
 
 export default function AddUser() {
     return (
         <div className="RA-bgBlue">
-            <h1 className="RA-HeaderStyle w-100">Add User</h1>
+            <h1 className="RA-HeaderStyle">Add User</h1>
             <div className="RA-bgWhite RA-MarginBox">
                 <div className="d-flex row">
                     <div className="form-group col-lg-4 col-md-6 col-sm-12">
@@ -97,6 +98,9 @@ export default function AddUser() {
                     </div>
                     <div className="           col-lg-4 col-md-12  col-sm-12 d-flex justify-content-center mt-5">
                         <img src={Profile} alt="" className="RA-imgStyle mx-auto"></img>
+                    </div>
+                    <div className="d-flex align-items-center justify-content-end">
+                        <Link to={'dashboard/users'}><button type="button" className="btn mx-4 px-2 py-2 display-4 border-0">Add User</button></Link>
                     </div>
                 </div>
             </div>
