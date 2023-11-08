@@ -5,7 +5,7 @@ import './Performance.css';
 // ResponsiveContainer
 
 
-const Performance = () => {
+export const Performance = () => {
     // Define your chart data and options
     const data = [
         {

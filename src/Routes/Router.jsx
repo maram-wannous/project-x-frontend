@@ -86,6 +86,7 @@ export const routes = [
                 path: 'users/update',
                 element: <UpdateUser/>,
             },
+            
 
             // {
             //     element: <RequireAuth allowedRole={'admin'}/>,

@@ -1,6 +1,5 @@
-import ProjectProfile from './Components/ProjectProfile/ProjectProfile';
-// import ProfileInfo from './Components/ProfileInfo/ProfileInfo';
-
+import './App.css'
+import Login from './Modules/Login/Pages/Login';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -13,8 +12,7 @@ function App() {
 
   return (
     <div>
-      {/* <ProfileInfo/> */}
-      <ProjectProfile/>
+      <Login/>
     </div>
   )
 }
