@@ -12,8 +12,8 @@ export default function AdminProjects() {
             <div className="sa_divTitle">
                 <p className="sa_title">Projects</p>
             </div>
-            <div className="sa_divBody gap-4 ">
-                <div className="sa_divStaPerfTMem d-flex justify-content-center align-items-center flex-wrap gap-4">
+            <div className="sa_divBody gap-4">
+                <div className="sa_divStaPerfTMem d-flex justify-content-center align-items-center flex-wrap gap-3">
                     <div className="sa_divProjectsStats">
                         <TaskDash />
                     </div>

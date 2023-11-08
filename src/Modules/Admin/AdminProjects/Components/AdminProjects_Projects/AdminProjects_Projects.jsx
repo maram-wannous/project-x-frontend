@@ -58,18 +58,7 @@ export const AdminProjects_Projects = () => {
                         <img src={img_project} className='sa_projectImage' alt="" />
                         <p className='sa_projectName'>Emo stuff</p>
                     </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 .sa_textTitle {
     color: var(--Text, #4B4B4B);
     font-family: Roboto;
-    font-size: 2rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5rem;
@@ -13,7 +13,7 @@
 }
 .sa_form {
     border-radius: 6px;
-    width: 22.79919rem;
+    width: 20.79919rem;
     height: 2.5315rem;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
     color: var(--1, #FF8500);
     text-align: center;
     font-family: Roboto;
-    font-size: 1.475rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5rem;
@@ -51,8 +51,8 @@
     margin-bottom: 0;
 }
 .sa_picMemberDiv {
-    width: 7.5063rem;
-    height: 7.5063rem;
+    width: 5.5063rem;
+    height: 5.5063rem;
     background-color: #D0B229;
     border-radius: 50%;
     display: flex;
@@ -60,8 +60,8 @@
     justify-content: center;
 }
 .sa_picMember {
-    width: 6.73544rem;
-    height: 7.57063rem;
+    width: 4.73544rem;
+    height: 5.57063rem;
 }
 .sa_slide {
     gap: 1.99rem;
@@ -88,6 +88,7 @@
     background-color: #E0E0E0 !important;
     justify-content: center !important;
     border-radius: 0.5rem !important;
+    font-size: 0.75rem;
 }
 .sa_containerSlideMember ul.slick-dots li.slick-active div {
     background-color: var(--1, #FF8500) !important;
@@ -95,8 +96,8 @@
 }
 
 .sa_containerSlideMember .slick-next {
-    right: 42.5% !important;
-    top: 105% !important;
+    right: 38% !important;
+    top: 103% !important;
     z-index: 10;
 }
 .sa_containerSlideMember .slick-next::before {
@@ -109,8 +110,8 @@
     line-height: normal !important;
 }
 .sa_containerSlideMember .slick-prev {
-    top: 105% !important;
-    left: 45.5% !important; 
+    top: 103% !important;
+    left: 40% !important; 
     z-index: 10;  
 }
 .sa_containerSlideMember .slick-prev::before {
