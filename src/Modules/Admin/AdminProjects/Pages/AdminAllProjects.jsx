@@ -49,7 +49,7 @@ export const AdminAllProjects = () => {
     <div className=''>
       <div className="sa_divTitle d-flex align-items-center justify-content-between mx-5 px-4">
         <p className="sa_titleAllProjects">Projects</p>
-        <button className='sa_AdminAllProjects_ButtunCreate'>Create</button>
+        <button className='btn'>Create</button>
       </div>
 
       <Slider {...settings} className='sa_containerSlideAllProjects'>
