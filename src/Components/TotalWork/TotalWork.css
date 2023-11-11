@@ -1,10 +1,12 @@
-.container{
-    width: 19rem;
-    border-radius: 10px;
-    background-color: white;
-    padding: 22px;
+.si-container1{
+   
+    border-radius: 15px;
+    background-color:white;
+    padding: 52px; 
+    border-color: #cfd3d4; 
+    box-shadow: 1px 3px  #c9c1c1;
 }
-.container .circle {
+.si-container1 .si-circle {
     width: 150px;
     height: 150px;
     padding: 5px;
@@ -16,14 +18,14 @@
     text-align: center;
     font-size: x-large;
     padding-top:48px ;
-    margin-left: 20%;
+    margin-left: 30%;
     margin-top: 25px;
     margin-bottom: 20px;
   }
-  .container h2{
+  .si-container1 h1{
     font-size: small;
     font-weight: bold;
-    margin-right: 52px;
+    margin-right: 100px;
     margin-top: 5px;
   }
    
