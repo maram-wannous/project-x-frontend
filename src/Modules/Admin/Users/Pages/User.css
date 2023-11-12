@@ -21,7 +21,7 @@
 
 }
 .RA-Field{
-    width: 30.75rem !important;
+    width:17.75rem !important;
     height: 3.25rem !important;
     border-radius: 0.9375rem !important;
     border: 1.5px solid #DDD !important;
@@ -30,7 +30,6 @@
 .RA-Label{
     color: #333;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.40625rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -43,7 +42,7 @@
 }
 .RA-FieldDev{
     display: flex;
-    width: 11.4375rem !important;/*15.4375rem;*/
+    width: 9.4375rem !important;/*15.4375rem;*/
     height: 3.0625rem;
     padding: 0.625rem;
     border-radius: 0.75rem;
@@ -52,7 +51,7 @@
 
 }
 .RA-fsLabel{
-    font-size: 1.40625rem;
+    font-size: 1rem;
 }
 .RA-BorderRadius{
     border-radius: 0.9375rem !important;
@@ -86,26 +85,43 @@
     cursor: pointer;
     font-size: 18px;
 }
-
+.RA-div {
+    position: relative;
+    overflow: hidden;
+}
+.RA-input {
+        position: absolute;
+        font-size: 50px;
+        opacity: 0;
+        right: 0;
+        top: 0;
+    }
+.btn-height{
+    height: fit-content;
+}
+.colorGray{
+    color: rgb(128, 128, 128);
+}
 /*
 .RA-mb{
     margin-bottom: 20.44rem;
 }*/
 @media (min-width: 1103px) {
     .RA-Field{
-        width: 29.75rem !important;
+        width: 17.75rem !important;
           }
     .RA-FieldDev{
-        width: 14.4375rem;
+        width: 11.4375rem;
     }
 }
 @media (max-width: 1103px) {
     .RA-Field{
-        width: 25.75rem !important;
+        width: 15.75rem !important;
     }
 }
+/*
 @media (max-width: 987px) {
     .RA-FieldDev{
         width: 25.75rem!important;
     }
-}
+}*/
