@@ -1,4 +1,3 @@
-import './TotalWork.css'
 export default function TotalWork(){
     return (
          <div className="si-container1"   rounded>

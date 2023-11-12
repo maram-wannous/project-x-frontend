@@ -4,6 +4,7 @@ import { Logo } from "../../../assets/Logo";
 import loginImg from '../../../assets/login.png'
 import './login.css'
 
+
 export default function Login() {
 
     return(
@@ -26,14 +27,14 @@ export default function Login() {
                     <p className="text-start mb-4">Welcome back! Please enter your details.</p>
                     <Form>
                         <Form.Group className="mb-3 mr-custom-form" controlId="formBasicEmail">
-                            <Form.Control 
+                            <Form.Control
                             type="email"
                             required
-                            placeholder="Enter email" 
+                            placeholder="Enter email"
                             />
                         </Form.Group>
                         <Form.Group className="mb-3 mr-custom-form" controlId="formBasicPassword">
-                            <Form.Control 
+                            <Form.Control
                             type="password"
                             required
                             placeholder="Password" />

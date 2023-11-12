@@ -1,7 +1,7 @@
 import {Chart as ChartJS, ArcElement, Tooltip, Legend, Title} from 'chart.js';
-import { Pie } from 'react-chartjs-2';
+import {Pie} from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-
+import './TaskDash.css';
 ChartJS.register(ArcElement, Tooltip, Legend);
 ChartJS.register(ArcElement, Tooltip, Legend, Title, ChartDataLabels);
 
@@ -31,12 +31,9 @@ export function TaskDash() {
     const options = {
         plugins: {
             datalabels: {
-                color: 	'black',
-                anchor: 'end',
-                align: 'end',
-                font: {
-                    weight: 'bold', // Increase font weight
-                },
+                color: 'white',
+                anchor: 'center',
+                align: 'center',
                 formatter: (value, context) => {
                     return ((value / context.chart.data.datasets[0].data.reduce((a, b) => a + b) * 100).toFixed(1) + '%');
                 },
@@ -46,7 +43,7 @@ export function TaskDash() {
             position: 'right', // Move the legend to the right
             labels: {
                 generateLabels: function (chart) {
-                    const { data } = chart;
+                    const {data} = chart;
                     if (data.labels.length && data.datasets.length) {
                         return data.labels.map((label, i) => {
                             const dataset = data.datasets[0];
@@ -71,5 +68,15 @@ export function TaskDash() {
             },
         },
     };
-    return <div className="w-25"><Pie data={data} options={options}/></div>;
+    return (
+        <div>
+            <div className="RA-bgBlue">
+                <div className="RA-bgWhite RA-MarginBoxProj ">
+                    <h1 className="RA-HeaderStyle colorBlack">Tasks</h1>
+                    <div  className="text-center d-flex justify-content-center"><Pie className="w-71" data={data} options={options}/></div>
+                </div>
+            </div>
+
+        </div>
+    );
 }

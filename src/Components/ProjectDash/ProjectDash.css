@@ -9,3 +9,12 @@ border-radius: 1rem;
 .RA-bg{
     background: #FFF;
 }
+.RA-MarginBoxProj{
+  /*  margin: -4% 2% 17% 26% !important;*/
+    padding: 3% 2% 4% 2% !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16) !important;
+}
+.WidthFitContent{
+    width: fit-content;
+}

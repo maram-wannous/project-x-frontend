@@ -1,6 +1,5 @@
-import { Col, Container , Row } from "react-bootstrap";
-import './WorkedWith.css';
-export default function WorkedWith(props){
+
+export default function WorkedWith(){
     return (
         <Container className="si-container2">
             <h6>Inicio &gt; Profile</h6>

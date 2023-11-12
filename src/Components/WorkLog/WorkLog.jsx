@@ -1,6 +1,6 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
-
+import './WorkLog.css';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const WorkLog = () => {
@@ -26,5 +26,11 @@ const WorkLog = () => {
             },
         ],
     };
-    return <div className="w-25"><Doughnut data={data} /></div>;}
+    return(<div className="RA-bgBlue">
+        <div className="RA-bgWhite RA-MarginBoxProj">
+        <h1 className="RA-HeaderStyle colorBlack">Work Log</h1>
+            <div  className="text-center d-flex justify-content-center"><Doughnut className="w-85" data={data} /></div>
+            </div>
+    </div>);
+}
 export default WorkLog;

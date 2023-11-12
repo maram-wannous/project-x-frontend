@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
+/* .RA-display-7{
+    font-size: 1.5rem ;
+} */
+.RA-bgWhite{
+    background: white;
+}
+.RA-bgBlue{
+    background: #F0F6FF;
+}
+.RA-HeaderStyle{
+    color: #9A93B3;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.RA-addWidthHeight{
+     max-height:100%;
+     max-width: 100%;
+
+}
+.RA-Field{
+    width:17.75rem !important;
+    height: 3.25rem !important;
+    border-radius: 0.9375rem !important;
+    border: 1.5px solid #DDD !important;
+    margin-left: 2.31rem;
+}
+.RA-Label{
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 1.63rem 0.62rem 0 2.31rem;
+}
+.RA-Label-SM{
+    font-weight: 400 !important;
+    width: 10.5625rem;
+    height: 1.75rem;
+}
+.RA-FieldDev{
+    display: flex;
+    width: 9.4375rem !important;/*15.4375rem;*/
+    height: 3.0625rem;
+    padding: 0.625rem;
+    border-radius: 0.75rem;
+    margin-left: 2.31rem;
+    border: 1.5px solid #DDD !important;
+
+}
+.RA-fsLabel{
+    font-size: 1rem;
+}
+.RA-BorderRadius{
+    border-radius: 0.9375rem !important;
+}
+.RA-imgStyle{
+    width: 10.75rem;
+    height: 10.08131rem;
+    flex-shrink: 0;
+    border-radius: 12.5rem;
+    border: 1px solid var(--orange);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.RA-MarginBox{
+    margin: 4% 2% 17% 1%;
+    padding:4% 2% 6% 1% ;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+}
+.RA-header th {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Adjust this to match your background color */
+    z-index: 2; /* Ensure header is above other content */
+}
+.fontSize2Rem{
+    font-size: 2rem;
+}
+
+.RA-table-icon {
+    cursor: pointer;
+    font-size: 18px;
+}
+.RA-div {
+    position: relative;
+    overflow: hidden;
+}
+.RA-input {
+        position: absolute;
+        font-size: 50px;
+        opacity: 0;
+        right: 0;
+        top: 0;
+    }
+.btn-height{
+    height: fit-content;
+}
+.colorGray{
+    color: rgb(128, 128, 128);
+}
+/*
+.RA-mb{
+    margin-bottom: 20.44rem;
+}*/
+@media (min-width: 1103px) {
+    .RA-Field{
+        width: 17.75rem !important;
+          }
+    .RA-FieldDev{
+        width: 11.4375rem;
+    }
+}
+@media (max-width: 1103px) {
+    .RA-Field{
+        width: 15.75rem !important;
+    }
+}
+/*
+@media (max-width: 987px) {
+    .RA-FieldDev{
+        width: 25.75rem!important;
+    }
+}*/

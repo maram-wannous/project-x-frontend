@@ -1,3 +1,12 @@
+
+
+export default function ProjectProfile(){
+    return (   
+        <div>ProjectProfile</div>
+    )
+}
+
+
 import "./ProjectProfile.css";
 
 import art from './../../assets/art.png'
