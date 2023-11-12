@@ -1,0 +1,58 @@
+.sa_divTitle {
+    margin: 1.31rem 2.31rem;
+}
+.sa_title {
+    color: #0E2040;
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.sa_divBody {
+    margin: 4.76rem 2.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sa_divStaPerfTMem {
+    width: 60%;
+    height: 100%;
+}
+
+.sa_divProjectsStats {
+    width: 40%;
+    height: 20.3125rem;
+    border-radius: 0.5rem;
+    background-color: #FFF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+}
+
+.sa_divPerformance {
+    height: 20.3125rem;
+    width: 57%;
+    border-radius: 0.5rem;
+    background-color: #FFF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+    padding: 0.63rem 1.2rem;
+}
+
+.sa_divTeamMember {
+    width: 97%;
+    max-height: max-content;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background-color: white;
+}
+
+.sa_divProjects {
+    border-radius: 1.25rem;
+    background-color: var(--White, #FDFEFF);
+    width: 37.9375rem;
+    height: 77.5;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2.17rem;
+}

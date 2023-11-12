@@ -60,7 +60,7 @@ export const AdminProjects_Projects = () => {
                     </div>
                     
                 </div>
-            </div>
+                </div>
         </div>
     )
 }

@@ -1,25 +1,26 @@
 import { AdminProjects_Projects } from "../Components/AdminProjects_Projects/AdminProjects_Projects";
 import { TeamMember } from "../Components/TeamMember/TeamMember";
-import './AdminProjects.css'
 import { TaskDash } from './../../../../Components/TaskDash/TaskDash';
+// import { AdminAllProjects } from "./AdminAllProjects";
+// import { CardProject } from "../../../../Components/CardProject/CardProject";
+// import { Performance } from './../../../../Components/Performance/Performance';
+import './AdminProjects.css'
 
 export default function AdminProjects() {
     return (
-        <div className="container-fluid">
-            <div>
-                <h1 className="header-style">Projects</h1>
+        <div className="">
+            <div className="sa_divTitle">
+                <p className="sa_title">Projects</p>
             </div>
-            <div className="sa_divBody">
-                <div className="d-flex justify-content-start align-items-start flex-wrap gap-1 sa_divStaPerfTMem ">
-                    <div className="mr-left-top-content">
-                        <div className="sa_divProjectsStats">
-                            <TaskDash />
-                        </div>
-                        <div className="sa_divPerformance">
-                            {/* <Performance/> */}
-                        </div>
+            <div className="sa_divBody gap-4">
+                <div className="sa_divStaPerfTMem d-flex justify-content-center align-items-center flex-wrap gap-3">
+                    <div className="sa_divProjectsStats">
+                        <TaskDash />
                     </div>
-                    <div className="sa_divTeamMember">
+                    <div className="sa_divPerformance">
+                        {/* <Performance/> */}
+                    </div>
+                    <div className="sa_divTeamMember p-5">
                         <TeamMember/>
                     </div>
                 </div>
