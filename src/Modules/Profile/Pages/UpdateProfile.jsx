@@ -1,6 +1,6 @@
 import React, { useState ,useEffect } from "react";
-import { Form , Button, Row, FormLabel, Col  } from "react-bootstrap"; 
-import './../../../App.css';
+import { Form , Button, Row, FormLabel } from "react-bootstrap"; 
+import './UpdateProfile.css';
 import TotalWork from "../../../Components/TotalWork/TotalWork";
 import WorkedWith from "../../../Components/WorkedWith/WorkedWith";
 import ProfileInfo from "../../../Components/ProfileInfo/ProfileInfo";
@@ -9,7 +9,7 @@ function UpdateProfile() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState(""); 
   const [password, setPassword] = useState("");
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(""); 
   const [countries, setCountries] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState('');
   useEffect(() => {
@@ -29,7 +29,7 @@ function UpdateProfile() {
   };
   const handleSubmit = (e) => {
     e.preventDefault(); 
-    alert(`Name: ${name}, Email: ${email}, Phone Number: ${message}, Password: ${password}`);
+    alert(`Name: ${name}, Email: ${email}, Phone-Number: ${value}, Password: ${password}`);
   };
  
   return (
@@ -83,7 +83,7 @@ function UpdateProfile() {
           onChange={(e) => setName(e.target.value)}
         />
       </Form.Group> 
-       <Form.Group   className="input" controlId="Phone Number">
+       <Form.Group   className="input" controlId="Phone-Number">
         <Form.Label>Phone Number</Form.Label>
         <Form.Control
           type="tel"
