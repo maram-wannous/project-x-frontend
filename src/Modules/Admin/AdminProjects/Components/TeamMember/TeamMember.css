@@ -9,12 +9,12 @@
     margin-bottom: 0;
 }
 .sa_searhView {
-    gap: 1.35rem;
+    gap: 1rem;
 }
 .sa_form {
     border-radius: 6px;
-    width: 20.79919rem;
-    height: 2.5315rem;
+    max-width: 11.79919rem;
+    height: 2.0315rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -43,7 +43,7 @@
     color: var(--1, #FF8500);
     text-align: center;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5rem;
@@ -51,8 +51,8 @@
     margin-bottom: 0;
 }
 .sa_picMemberDiv {
-    width: 5.5063rem;
-    height: 5.5063rem;
+    width: 4.5063rem;
+    height: 4.5063rem;
     background-color: #D0B229;
     border-radius: 50%;
     display: flex;
@@ -60,13 +60,13 @@
     justify-content: center;
 }
 .sa_picMember {
-    width: 4.73544rem;
-    height: 5.57063rem;
+    width: 3.73544rem;
+    height: 4.57063rem;
 }
 .sa_slide {
     gap: 1.99rem;
     padding-bottom: 1.15rem;
-    padding-top: 2.44rem;
+    padding-top: 1rem;
     background-color: white;
 }
 .sa_containerSlideMember {
@@ -77,6 +77,9 @@
 .sa_box {
     height: 100% !important;
     width: 100% !important;
+}
+.sa_containerSlideMember ul.slick-dots {
+    bottom: -20px;
 }
 .sa_containerSlideMember ul.slick-dots li div {
     display: flex !important;
@@ -97,7 +100,7 @@
 
 .sa_containerSlideMember .slick-next {
     right: 38% !important;
-    top: 103% !important;
+    top: 103.5% !important;
     z-index: 10;
 }
 .sa_containerSlideMember .slick-next::before {
@@ -110,8 +113,8 @@
     line-height: normal !important;
 }
 .sa_containerSlideMember .slick-prev {
-    top: 103% !important;
-    left: 40% !important; 
+    top: 103.5% !important;
+    left: 42% !important; 
     z-index: 10;  
 }
 .sa_containerSlideMember .slick-prev::before {
@@ -122,6 +125,93 @@
     font-style: normal !important;
     font-weight: 500 !important;
     line-height: normal !important;
+}
+
+@media (max-width : 1852px) {
+    .sa_containerSlideMember .slick-next {
+        right: 36% !important;
+    }
+}
+@media (max-width : 1800px) {
+    .sa_containerSlideMember .slick-prev {
+        left: 40% !important;
+    }
+}
+@media (max-width : 1570px) {
+    .sa_containerSlideMember .slick-next {
+        right: 34% !important;
+    }
+    .sa_containerSlideMember .slick-prev {
+        left: 38% !important;
+    }
+}
+@media (min-width : 992px) {
+    .sa_containerSlideMember .slick-next {
+        right: 30% !important;
+    }
+    .sa_containerSlideMember .slick-prev {
+        left: 34% !important;
+    }
+}
+@media (max-width : 1236px) {
+    .sa_picMemberDiv {
+        width: 3.5063rem;
+        height: 3.5063rem;
+        background-color: #D0B229;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sa_picMember {
+        width: 2.73544rem;
+        height: 3.57063rem;
+    }
+    .sa_textTitle {
+        font-size: 0.75rem;
+    }
+    .sa_searhView {
+        gap: 15px !important;
+    }
+    .sa_form {
+        border-radius: 6px;
+        max-width: 8.79919rem;
+        height: 1.7315rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        padding: 5px 7px;
+        gap: 5px;
+        background-color: #e5e6e9;
+    }
+    .sa_searchIcon {
+        width: 0.88rem;
+        height: 0.9rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    .sa_searchTextTeamMember {
+        background-color: #e5e6e9;
+        font-family: Inter;
+        font-size: 0.65rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .sa_viewAll {
+        color: var(--1, #FF8500);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+        letter-spacing: 0.0125rem;
+        margin-bottom: 0;
+    }
 }
 
 

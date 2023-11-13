@@ -22,9 +22,9 @@ ul {
 }
 .btn,
 .btn:active{
-    background-color: var(--orange) !important;
+    background-color: var(--orange);
     width: fit-content;
-    color: white !important;
+    color: white;
     border: none;
 }
 .btn:hover,
