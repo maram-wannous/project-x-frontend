@@ -102,3 +102,46 @@
     left: 25%;
     z-index: 333;
 }
+
+@media (max-width : 1790px) {
+    .sa_cardProject {
+        max-width: 20.10656rem;
+        padding: 10px ;
+    }   
+    .sa_ProjectName {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .sa_FiEdit {
+        width: 1rem;
+        height: 1rem;
+    }
+    .sa_buttOfftrack {
+        font-size: 0.75rem;
+        font-weight: 400;
+        width: 4rem;
+        height: 2em;
+    }
+    .sa_CardText {
+        color: #424242;
+        font-size: 0.75rem;
+    }
+    
+    .sa_BsHourglassBottom {
+        width: 0.88rem;
+        height: 1.1rem;
+    }
+    
+    .sa_DateProject {
+        font-size: 0.875rem;
+    }
+    
+    .sa_SlFolderAlt {
+        width: 1.04338rem;
+        height: 1.06988rem;
+    }
+    .sa_14_issues {
+        font-size: 0.875rem;
+    }
+    
+}

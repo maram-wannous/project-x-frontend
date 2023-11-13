@@ -3,64 +3,53 @@ import img_project from './../AdminProjects_Projects/Imagem.png';
 
 export const AdminProjects_Projects = () => {
     return (
-        <div className='bg-white p-4 sa_AdminProjects_ProjectDiv'>
-            <div className='d-flex align-items-center justify-content-between pb-3'>
+        <div className='bg-white p-2 sa_AdminProjects_ProjectDiv'>
+            <div className='d-flex align-items-center justify-content-between pb-4'>
                 <p className='sa_AdminProjects_ProjectsTitle'>Projects</p>
-                <p className='sa_AdminProjects_ProjectsViweAll'>View all</p>
+                <button className='sa_AdminProjects_ProjectsViweAll'>View all</button>
             </div>
-            <div className=''>
-                <div className='d-flex align-items-center justify-content-center gap-5 flex-wrap py-5'>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    <div className='d-flex flex-column align-items-center justify-content-center gap-3'>
-                        <img src={img_project} className='sa_projectImage' alt="" />
-                        <p className='sa_projectName'>Emo stuff</p>
-                    </div>
-                    
+
+            <div className='d-flex align-items-center justify-content-center gap-5 flex-wrap py-4 sa_AdminProjects_ImgDiv'>
+                <div className='d-flex flex-column align-items-center justify-content-center gap-2'>
+                    <img src={img_project} className='sa_projectImage' alt="" />
+                    <p className='sa_projectName'>Emo stuff</p>
                 </div>
+                <div className='d-flex flex-column align-items-center justify-content-center gap-2'>
+                    <img src={img_project} className='sa_projectImage' alt="" />
+                    <p className='sa_projectName'>Emo stuff</p>
+                </div>
+                <div className='d-flex flex-column align-items-center justify-content-center gap-2'>
+                    <img src={img_project} className='sa_projectImage' alt="" />
+                    <p className='sa_projectName'>Emo stuff</p>
+                </div>
+
+                <div className='d-flex flex-column align-items-center justify-content-center gap-2'>
+                    <img src={img_project} className='sa_projectImage' alt="" />
+                    <p className='sa_projectName'>Emo stuff</p>
+                </div>
+                <div className='d-flex flex-column align-items-center justify-content-center gap-2'>
+                    <img src={img_project} className='sa_projectImage' alt="" />
+                    <p className='sa_projectName'>Emo stuff</p>
+                </div>
+                <div className='d-flex flex-column align-items-center justify-content-center gap-2'>
+                    <img src={img_project} className='sa_projectImage' alt="" />
+                    <p className='sa_projectName'>Emo stuff</p>
+                </div>
+                <div className='d-flex flex-column align-items-center justify-content-center gap-2'>
+                    <img src={img_project} className='sa_projectImage' alt="" />
+                    <p className='sa_projectName'>Emo stuff</p>
+                </div>
+                <div className='d-flex flex-column align-items-center justify-content-center gap-2'>
+                    <img src={img_project} className='sa_projectImage' alt="" />
+                    <p className='sa_projectName'>Emo stuff</p>
+                </div>
+                <div className='d-flex flex-column align-items-center justify-content-center gap-2'>
+                    <img src={img_project} className='sa_projectImage' alt="" />
+                    <p className='sa_projectName'>Emo stuff</p>
+                </div>
+
             </div>
+
         </div>
     )
 }

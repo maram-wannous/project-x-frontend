@@ -61,3 +61,40 @@
     font-weight: 500 !important;
     line-height: normal !important;
 }
+
+@media (max-width : 1790px) {
+    .sa_titleAllProjects {
+        font-size: 1.575rem;
+    }
+    .sa_AdminAllProjects_BodyDiv {
+        margin:1rem 0 !important;
+        
+    }
+    .sa_containerSlideAllProjects .slick-next {
+        right: 44% !important;
+    }
+    .sa_containerSlideAllProjects .slick-prev {
+        left: 42% !important; 
+    }
+}
+@media (max-width : 1545px) {
+    .sa_containerSlideAllProjects .slick-prev {
+        left: 40% !important;  
+    }
+    .sa_containerSlideAllProjects .slick-next {
+        right: 42% !important;
+    }
+}
+@media (max-width : 1545px) {
+    .sa_containerSlideAllProjects .slick-prev {
+        left: 38% !important;  
+    }
+}
+@media (max-width : 1160px) {
+    .sa_containerSlideAllProjects .slick-prev {
+        left: 36% !important;  
+    }
+    .sa_containerSlideAllProjects .slick-next {
+        right: 40% !important;
+    }
+}

@@ -49,10 +49,31 @@
 .sa_divProjects {
     border-radius: 1.25rem;
     background-color: var(--White, #FDFEFF);
-    width: 37.9375rem;
-    height: 77.5;
+    width: 38%;
+    height: 100%;
     flex-shrink: 0;
     border-radius: 1.25rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 2.17rem;
+}
+
+@media (max-width : 1847px) {
+    .sa_divTitle {
+        margin: 0.51rem 2.31rem;
+    }
+    .sa_title {
+        font-size: 1.275rem;
+    }
+    .sa_divBody {
+        margin: 1rem 1rem;
+    }
+    .sa_divProjectsStats {
+        height: 15.3125rem;
+    }
+    .sa_divPerformance {
+        height: 15.3125rem;
+    }
+    .sa_divProjects {
+        padding: 15px !important;
+    }
 }
