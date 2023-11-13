@@ -1,3 +1,4 @@
+import Performance from "../../../../Components/Performance/Performance";
 import { AdminProjects_Projects } from "../Components/AdminProjects_Projects/AdminProjects_Projects";
 import { TeamMember } from "../Components/TeamMember/TeamMember";
 import { TaskDash } from './../../../../Components/TaskDash/TaskDash';
@@ -10,7 +11,7 @@ export default function AdminProjects() {
     return (
         <div className="">
             <div className="sa_divTitle">
-                <p className="sa_title">Projects</p>
+                <p className="header-style">Projects</p>
             </div>
             <div className="sa_divBody gap-1">
                 <div className="sa_divStaPerfTMem d-flex justify-content-center align-items-center flex-wrap gap-2">
@@ -19,6 +20,7 @@ export default function AdminProjects() {
                     </div>
                     <div className="sa_divPerformance">
                         {/* <Performance/> */}
+                        <Performance/>
                     </div>
                     <div className="sa_divTeamMember py-4">
                         <TeamMember/>

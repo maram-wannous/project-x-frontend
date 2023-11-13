@@ -3,6 +3,8 @@ import { FiEdit } from "react-icons/fi";
 import { BsHourglassBottom } from "react-icons/bs";
 import { SlFolderAlt } from "react-icons/sl";
 import imgTeam from './../../assets/imgTeam.png';
+import { Link } from 'react-router-dom'
+
 
 export const CardProject = () => {
   return (
@@ -10,7 +12,7 @@ export const CardProject = () => {
         <div className='d-flex align-items-center justify-content-between border-bottom pb-2'>
             <div className='d-flex align-items-center gap-3 '>
                 <p className='sa_ProjectName'>Adoddle</p>
-                <FiEdit className='sa_FiEdit'/>
+                <Link to={'/dashboard/adminprojects/update'}><FiEdit className='sa_FiEdit'/></Link>
             </div>
             <button className='sa_buttOfftrack'>Offtrack</button>
         </div>
