@@ -5,6 +5,7 @@
 --red:red;
 --green:#14a44d;
 --darkgray:#4f4f4f;
+ --black:black;
 }
 /*----------------Color-----------------*/
 .colorOrange{
@@ -18,6 +19,9 @@
 }
 .colorDarkGreen{
     color: var(--darkgray) !important;
+}
+.colorBlack{
+    color: var(--black) !important;
 }
 /*----------------BACKGROUND-----------------*/
 .colorBgGreen{

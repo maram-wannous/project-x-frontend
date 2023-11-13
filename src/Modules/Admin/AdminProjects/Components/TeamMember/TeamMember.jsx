@@ -3,7 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import img1 from './../TeamMember/Intersect.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React, { Component } from "react";
+// import React, { Component } from "react";
 import Slider from "react-slick";
 
 export const TeamMember = () => {
@@ -92,7 +92,7 @@ export const TeamMember = () => {
                                     <img className='sa_picMember' src={img1} alt="" />
                                 </div>
                                 <div className='sa_picMemberDiv'>
-                                    <img className='sa_picMember' src={img1} alt="" />
+                                <img className='sa_picMember' src={img1} alt="" />
                                 </div>
                                 <div className='sa_picMemberDiv'>
                                     <img className='sa_picMember' src={img1} alt="" />
@@ -158,7 +158,7 @@ export const TeamMember = () => {
                                 </div>
                             </div>
                             <div className='d-flex justify-content-evenly flex-wrap'>
-                                <div className='sa_picMemberDiv'>
+                            <div className='sa_picMemberDiv'>
                                     <img className='sa_picMember' src={img1} alt="" />
                                 </div>
                                 <div className='sa_picMemberDiv'>

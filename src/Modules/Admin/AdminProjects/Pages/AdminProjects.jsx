@@ -1,10 +1,10 @@
 import { AdminProjects_Projects } from "../Components/AdminProjects_Projects/AdminProjects_Projects";
 import { TeamMember } from "../Components/TeamMember/TeamMember";
-import { AdminAllProjects } from "./AdminAllProjects";
-import './AdminProjects.css'
 import { TaskDash } from './../../../../Components/TaskDash/TaskDash';
-import { CardProject } from "../../../../Components/CardProject/CardProject";
-import { Performance } from './../../../../Components/Performance/Performance';
+// import { AdminAllProjects } from "./AdminAllProjects";
+// import { CardProject } from "../../../../Components/CardProject/CardProject";
+// import { Performance } from './../../../../Components/Performance/Performance';
+import './AdminProjects.css'
 
 export default function AdminProjects() {
     return (
