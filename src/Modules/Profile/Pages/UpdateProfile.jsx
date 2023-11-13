@@ -1,5 +1,5 @@
-import React, { useState ,useEffect } from "react";
-import { Form , Button, Row, FormLabel, Col  } from "react-bootstrap"; 
+import { useState ,useEffect } from "react";
+import { Form , Button, Row, FormLabel  } from "react-bootstrap"; 
 import './../../../App.css';
 import TotalWork from "../../../Components/TotalWork/TotalWork";
 import WorkedWith from "../../../Components/WorkedWith/WorkedWith";

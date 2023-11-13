@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #F0F6FF;
     margin: 0;
     padding: 0;
 }
@@ -21,6 +20,26 @@ ul {
     padding: 0;
     margin: 0;
 }
+.btn,
+.btn:active{
+    background-color: var(--orange) !important;
+    width: fit-content;
+    color: white !important;
+    border: none;
+}
+.btn:hover,
+.btn:focus-visible {
+    background-color: #ff8400d3;
+    color: white;
+}
+.header-style{
+    color: #9A93B3;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
 .si-form{ 
     padding: 42px;
     width: 694px;
@@ -111,21 +130,4 @@ ul {
 }
 .si-updateWith .si-container2 .btn{
     margin-left: 190px;
-}
-.btn {
-    background-color: var(--orange);
-    width: fit-content;
-    color: white;
-    border: none;
-}
-.btn:hover {
-    background-color: #ff8400d3;
-    color: white;
-}
-.header-style{
-    color: #9A93B3;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
 }
