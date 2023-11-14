@@ -1,6 +1,6 @@
-import { Col, Container , Row } from "react-bootstrap";
 import './WorkedWith.css';
 import pic from './../../assets/happy.png';
+import { Col,Row ,Container } from 'react-bootstrap';
 export default function WorkedWith(){
     return (
         <Container className="si-container2">

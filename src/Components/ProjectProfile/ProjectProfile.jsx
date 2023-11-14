@@ -11,7 +11,7 @@ import v4m from './../../assets/v4m.png'
 import tim from './../../assets/tim.png'
 import React from "react";
 
-export default function ProjectProfile(props) {
+export default function ProjectProfile() {
   return (
     <div className="sl-projects">
       <h1 className="sl-title">Projects</h1>

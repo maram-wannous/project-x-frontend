@@ -1,12 +1,14 @@
-nav {
+.sa-nav {
     background: #FFF;
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    height: 70px;
+    width: 100vw;
 }
-form {
+.sa-form {
     border-radius: 6px;
     border: 1px solid #9A93B3;
     background: #FEFEFE;
-    width: 26.0625rem;
+    width: 22rem;
     height: 2.75rem;
     display: flex;
     align-items: center;
@@ -19,10 +21,6 @@ form {
     font-size: 22px;
     color: #787486;
 }
-.sa_searchIcon2 {
-    font-size: 30px;
-    color: rgb(27, 27, 27);
-}
 .sa_searchText {
     color: #787486;
     font-family: Inter;
@@ -32,6 +30,7 @@ form {
     line-height: normal;
     border: none;
     outline: none;
+    width: 100%;
 }
 button {
     background-color: transparent;
@@ -126,24 +125,27 @@ button {
 
 
 
-@media (max-width : 920px) {
-    form {
+@media (max-width : 767px) {
+    .sa-form {
+        width: 12rem;
+    }
+}
+@media (max-width : 610px) {
+    .sa-form {
         display: none;
     }
 }
-@media (min-width : 920px) {
-    .sa_searchIcon2 {
+
+@media (max-width : 556px) {
+    .sa_name , .sa_info {
         display: none;
     }
 }
 @media (max-width : 600px) {
-    .sa_name , .sa_info {
-        display: none;
-    }
     .sa_dropDown {
        right: 2%;
     }
     .sa_dropDown::before {
-        right: 7.2rem;
+        right: 8.2rem;
     }
 }

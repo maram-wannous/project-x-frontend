@@ -22,3 +22,20 @@ ul {
     margin: 0;
 }
 
+.btn {
+    background-color: var(--orange);
+    width: fit-content;
+    color: white;
+    border: none;
+}
+.btn:hover {
+    background-color: #ff8400d3;
+    color: white;
+}
+.header-style{
+    color: #9A93B3;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
