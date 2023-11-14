@@ -1,6 +1,6 @@
 .sl-info {
     width: 320px;
-    height: 627px;
+    height: 679px;
     margin-top: -62.875rem;
     margin-left: 335px;
     position: relative;
@@ -268,4 +268,9 @@
     left: 2px;
     top: 50px;
     position: absolute;
+}
+.sl-info .btn {
+    position: absolute;
+    top: 626px;
+    left: 45px;
 }

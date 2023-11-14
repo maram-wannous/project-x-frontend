@@ -49,7 +49,7 @@ export default function Sidbar() {
                         <RiProjectorFill />
                         <p className='m-0' 
                         style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
-                        >Project</p>
+                        >Admin Project</p>
                     </NavLink>
                     <NavLink to='tasks' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
@@ -57,7 +57,7 @@ export default function Sidbar() {
                         <FaTasks />
                         <p className='m-0' 
                         style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
-                        >Tasks</p>
+                        >Admin Tasks</p>
                     </NavLink>
                     <NavLink to='worklog' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
@@ -82,6 +82,22 @@ export default function Sidbar() {
                         <p className='m-0' 
                         style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Users</p>
+                    </NavLink>
+                    <NavLink to='usertasks' className="d-flex align-items-center gap-2 sa_textSidbar"
+                        style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
+                    >
+                        <FaUsers/>
+                        <p className='m-0' 
+                        style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
+                        >User tasks</p>
+                    </NavLink>
+                    <NavLink to='userprojects' className="d-flex align-items-center gap-2 sa_textSidbar"
+                        style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
+                    >
+                        <FaUsers/>
+                        <p className='m-0' 
+                        style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
+                        >User Projects</p>
                     </NavLink>
 
                     <div className="d-lg-none sa_showSidbar position-absolute"
