@@ -1,4 +1,6 @@
-
+import './WorkedWith.css';
+import pic from './../../assets/happy.png';
+import { Col,Row ,Container } from 'react-bootstrap';
 export default function WorkedWith(){
     return (
         <Container className="si-container2">
@@ -11,74 +13,74 @@ export default function WorkedWith(){
             </div>
             <Row>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col className="si-col">
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col className="si-col">
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
             </Row>
             <Row className="si-col">
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
             </Row>
             <Row className="si-col">
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
                 <Col>
-                <img src={props.img} class="img"  width="80" height="80"/>
-                <p>{props.title}</p>
+                <img src={pic} className="img"  width="80" height="80"/>
+                <p>title value</p>
                 </Col>
             </Row>
         </Container>
