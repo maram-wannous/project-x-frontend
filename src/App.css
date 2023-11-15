@@ -21,14 +21,16 @@ ul {
     margin: 0;
 }
 .btn,
-.btn:active{
+.btn:active,
+.btn:first-child:active {
     background-color: var(--orange);
     width: fit-content;
     color: white;
     border: none;
 }
 .btn:hover,
-.btn:focus-visible {
+.btn:focus-visible,
+:not(.btn-check)+.btn:active {
     background-color: #ff8400d3;
     color: white;
 }

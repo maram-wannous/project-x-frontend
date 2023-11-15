@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-export default function AdminTasks() {
+export default function AdminSubTask() {
     return(
         <div>
-            <Link to={'/dashboard/tasks/subtask'}><button>go toSubTask</button></Link>
+            <div>Admin Sub Task</div>
             <Link to={'/dashboard/tasks/assigntask'}><button>go AssignTask</button></Link>
         </div>
     )
