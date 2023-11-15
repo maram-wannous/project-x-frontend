@@ -9,7 +9,7 @@ import user from './../../assets/user.png'
 import "./ProfileInfo.css";
 import React from "react";
 
-export default function ProfileInfo(props) {
+export default function ProfileInfo() {
   return (
     <div className="sl-info"> 
       <h1>Yash Ghori</h1>
