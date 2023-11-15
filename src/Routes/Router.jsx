@@ -9,13 +9,13 @@ import Performance from "../Modules/Performance/Pages/Performance";
 import WorkLog from "../Modules/WorkLog/Pages/WorkLog";
 import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects";
 import UpdateProject from "../Modules/Admin/AdminProjects/Pages/UpdateProject";
-import AdminViewProjects from "../Modules/Admin/AdminProjects/Pages/AdminViewProjects";
 import AddProject from "../Modules/Admin/AdminProjects/Pages/AddProject";
 import ViewUsers from "../Modules/Admin/Users/Pages/ViewUsers";
 import AddUser from "../Modules/Admin/Users/Pages/AddUser";
 import UpdateUser from "../Modules/Admin/Users/Pages/UpdateUser";
 import UpdateProfile from "../Modules/Profile/Pages/UpdateProfile";
 import AdminTasks from "../Modules/Admin/Tasks/Pages/AdminTasks";
+import { AdminAllProjects } from "../Modules/Admin/AdminProjects/Pages/AdminAllProjects";
 
 const isAuthenticated= true;
 
@@ -59,15 +59,15 @@ export const routes = [
                 element: <AdminProjects/>,
             },
             {
-                path: 'projects',
-                element: <AdminViewProjects/>,
+                path: 'adminprojects/projects',
+                element: <AdminAllProjects/>,
             },
             {
-                path: 'projects/add',
+                path: 'adminprojects/add',
                 element: <AddProject/>,
             },
             {
-                path: 'projects/update',
+                path: 'adminprojects/update',
                 element: <UpdateProject/>,
             },
             {
