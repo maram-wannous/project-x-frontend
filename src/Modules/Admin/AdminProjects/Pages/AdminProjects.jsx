@@ -2,8 +2,7 @@ import Performance from "../../../../Components/Performance/Performance";
 import { AdminProjects_Projects } from "../Components/AdminProjects_Projects/AdminProjects_Projects";
 import { TeamMember } from "../Components/TeamMember/TeamMember";
 import { TaskDash } from './../../../../Components/TaskDash/TaskDash';
-// import { AdminAllProjects } from "./AdminAllProjects";
-// import { CardProject } from "../../../../Components/CardProject/CardProject";
+
 // import { Performance } from './../../../../Components/Performance/Performance';
 import './AdminProjects.css'
 
@@ -19,7 +18,6 @@ export default function AdminProjects() {
                         <TaskDash />
                     </div>
                     <div className="sa_divPerformance">
-                        {/* <Performance/> */}
                         <Performance/>
                     </div>
                     <div className="sa_divTeamMember py-4">
@@ -30,10 +28,6 @@ export default function AdminProjects() {
                     <AdminProjects_Projects />
                 </div>
             </div>
-
         </div>
-        // <div>
-        //     <AdminAllProjects/>
-        // </div>
     )
 }
