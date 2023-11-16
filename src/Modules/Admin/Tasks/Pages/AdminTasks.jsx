@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import './AdminTasks.css'
 import imgTeam from './../../../../assets/imgTeam.png';
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -6,8 +5,6 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 export default function AdminTasks() {
     return (
         <div>
-            <Link to={'/dashboard/tasks/subtask'}><button>go toSubTask</button></Link>
-            <Link to={'/dashboard/tasks/assigntask'}><button>go AssignTask</button></Link>
             <div className='sa_divTitle'>
                 <div>
                     <p className="header-style">Projects / Addodle</p>
@@ -47,6 +44,9 @@ export default function AdminTasks() {
                 </div>
 
             </div>
-        </div>
-    )
+</div>
+)
 }
+
+
+

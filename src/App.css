@@ -21,14 +21,16 @@ ul {
     margin: 0;
 }
 .btn,
-.btn:active{
+.btn:active,
+.btn:first-child:active {
     background-color: var(--orange);
     width: fit-content;
     color: white;
     border: none;
 }
 .btn:hover,
-.btn:focus-visible {
+.btn:focus-visible,
+:not(.btn-check)+.btn:active {
     background-color: #ff8400d3;
     color: white;
 }
@@ -38,96 +40,4 @@ ul {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-}
-
-.si-form{ 
-    padding: 42px;
-    width: 694px;
-    height: 729px;
-    margin-top: 118px;
-    margin-left: 686px;
-    border-color: #cfd3d4; 
-    border-radius: 10px;
-    box-shadow: 1px 3px  #c9c1c1;
-}
-.si-form .input{
-    width: 300px;
-    height: 100px;
-} 
-.si-form .lbl{
-    margin-bottom: 40px;
-    margin-top: -90px;
-}
-.si-form button{
-    margin-top: 130px;
-    width: 150px;
-    height: auto;
-    margin-bottom: -70px;
-    margin-left: -100px;
-}
-.si-info{
-    margin-top: 278px;
-}
- 
-.si-profTotal{
-    width: 27.938rem;
-    height: 22.25rem;
-    margin-top: -22.25rem;
-    margin-left: 86.063rem;
-    
-}
-.si-updateTotal{
-    width: 323px;
-    height:375px;
-    margin-top: 15px;
-    margin-left: 333px;
-     
-}
-.si-updateTotal .si-container1 .si-circle{
-    margin-left: -0.25px;
-}
-.si-profWith{
-    width: 41.5rem;
-    height: 62.875rem;
-    margin-top: 7.375rem;
-    margin-left: 43rem;
-    
-}
-
-.si-updateProf .sl-projects{
-    width: 447px;
-    height: 428px;
-    margin-top: -1014px;
-    margin-left: 1395px; 
-}
-.si-updateProf .art{
-    display: none;
-}
-.si-updateProf .gothic{
-    display: none;
-}
-.si-updateProf .halloween{
-    display: none;
-} 
-.si-updateProf .halloween-p{
-    display: none;
-} 
-.si-updateProf .gothic-p{
-    display: none;
-} 
-.si-updateProf .art-p{
-    display: none;
-} 
-.si-updateWith{
-    width: 446px;
-    height:576px;
-    margin-top: 20px;
-    margin-left: 1400px;  
-    font-size: small;
-}  
-.si-updateWith .si-container2 .si-col{
-    display: none;
-}
-.si-updateWith .si-container2 .btn{
-    margin-left: 190px;
 }

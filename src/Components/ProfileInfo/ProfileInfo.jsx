@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
  
 import avatar from './../../assets/avatar.png'
 import add from './../../assets/add.png'
@@ -7,9 +8,10 @@ import gallery from './../../assets/gallery.png'
 import user from './../../assets/user.png'
 
 import "./ProfileInfo.css";
+import { Link } from 'react-router-dom'
 // import React from "react";
 
-export default function ProfileInfo() {
+export default function ProfileInfo({pageProfile}) {
   return (
     <div className="sl-info"> 
       <h1>Yash Ghori</h1>
@@ -44,6 +46,10 @@ export default function ProfileInfo() {
           <img src={block} className="sl-div16" />
         </div>
       </div>
+      {
+        pageProfile && (<Link to={'/dashboard/profile/updateprofile'} className='btn'>Update Profile</Link>)
+      }
+      
     </div>
   );
 }
