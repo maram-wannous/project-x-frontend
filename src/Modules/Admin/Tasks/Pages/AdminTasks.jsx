@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import './AdminTasks.css'
 import imgTeam from './../../../../assets/imgTeam.png';
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export default function AdminTasks() {
     return (
