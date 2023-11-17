@@ -1,4 +1,4 @@
-.sa_CardImage1 {
+/* .sa_CardImage1 {
     left: 21.8% !important;
 }
 
@@ -20,7 +20,7 @@
 
 .sa_CardImage6 {
     left: 28% !important;
-}
+} */
 
 .sa_btnOfTrak {
     width: 7.25rem;
@@ -30,6 +30,36 @@
     color: var(--3, #71AA27);
     font-family: Inter;
     font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sa_textTime {
+    color: #656565;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sa_bodyBox {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #FFF;
+}
+
+.sa_BiCommentDots {
+    color: #5C5967;
+    width: 1.36519rem;
+    height: 1.29925rem;
+}
+
+.sa_textBottomTaska {
+    color: #5C5967;
+    font-family: Inter;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
