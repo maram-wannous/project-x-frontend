@@ -1,30 +1,30 @@
-import ProjectDash from "../../../Components/ProjectDash/ProjectDash.jsx";
+    import ProjectDash from "../../../Components/ProjectDash/ProjectDash.jsx";
 import {TaskDash} from "../../../Components/TaskDash/TaskDash.jsx";
 import WorkLog from "../../../Components/WorkLog/WorkLog.jsx";
 import Performance from "../../../Components/Performance/Performance.jsx";
-
+import  "./Dashboard.css";
 
 export default function Home(){
     return (
-        <div>
+        <div className="mh-100vh RA-bgBlue" >
             <div className="header-style">
                 <h1>Dashboard</h1>
             </div>
 
             <div>
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 mt-2">
                         <ProjectDash/>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 mt-2">
                         <TaskDash/>
                     </div>
                 </div>
-                <div className="row mt-5">
-                    <div className="col-md-6">
+                <div className="row">
+                    <div className="col-md-6 mt-2">
                         <WorkLog/>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 mt-2">
                        <Performance/>
                     </div>
                 </div>

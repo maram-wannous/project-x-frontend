@@ -5,9 +5,11 @@ import Dashboard from "../Modules/Dashboard/Pages/Dashboard"
 import Home from "../Modules/Dashboard/Pages/Home"
 import GuardedRoutes from "./GuardedRoutes"
 import Profile from "../Modules/Profile/Pages/Profile";
-import Performance from "../Modules/Performance/Pages/Performance";
+import Performance from "../Modules/Performance/Pages/Performance.jsx";
 import WorkLog from "../Modules/WorkLog/Pages/WorkLog";
+/*
 import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects";
+*/
 import UpdateProject from "../Modules/Admin/AdminProjects/Pages/UpdateProject";
 import AdminViewProjects from "../Modules/Admin/AdminProjects/Pages/AdminViewProjects";
 import AddProject from "../Modules/Admin/AdminProjects/Pages/AddProject";
@@ -54,10 +56,10 @@ export const routes = [
                 element: <WorkLog/>,
             },
             // Admin pages
-            {
+         /*   {
                 path: 'adminprojects',
                 element: <AdminProjects/>,
-            },
+            },*/
             {
                 path: 'projects',
                 element: <AdminViewProjects/>,
