@@ -72,6 +72,16 @@
     line-height: normal;
 }
 
+.sa_DateTextUserProjects {
+    color: #555252;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+
 .sa_DivImgTask {
     display: flex;
     align-items: end;
@@ -85,4 +95,35 @@
 .sa_btnToSubTask {
     width: 1.355rem;
     height: 1.5625rem;
+}
+
+.sa_dropDownTask {
+    position: absolute;
+    top: 100%;
+    z-index: 6666;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+.sa_dropDownTask::before {
+    content: '';
+    position: absolute;
+    top: -0.69rem;
+    right: 0.75rem;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.sa_dropDownTask.active {
+    opacity: 1;
+    display: block !important;
+}
+.sa_dropDownTask.inactive {
+    opacity: 0;
+    display: none !important;
 }

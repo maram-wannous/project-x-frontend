@@ -32,6 +32,7 @@
 .sa_containerSlideAllProjects ul.slick-dots li.slick-active div {
     background-color: var(--1, #FF8500) !important;
     border-radius: 0.5rem !important;
+    color: white;
 }
 
 .sa_containerSlideAllProjects .slick-dots {

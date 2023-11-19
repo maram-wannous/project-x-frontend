@@ -96,6 +96,7 @@
 .sa_containerSlideMember ul.slick-dots li.slick-active div {
     background-color: var(--1, #FF8500) !important;
     border-radius: 0.5rem !important;
+    color: white !important;
 }
 
 .sa_containerSlideMember .slick-next {
