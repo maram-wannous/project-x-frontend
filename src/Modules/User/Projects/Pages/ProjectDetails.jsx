@@ -1,7 +1,7 @@
 import './ProjectDetails.css'
 import imgTeam from './../../../../assets/imgTeam.png';
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Clock } from '../../../../Components/Clock/Clock';
 import { CardTask } from '../../../../Components/CardTask/CardTask';
 import { BiCommentDots } from "react-icons/bi";
@@ -40,12 +40,12 @@ export default function ProjectDetails() {
                                 <img className='sa_imgTeam' src={imgTeam} alt="" />
                             </div>
                         </div>
-                        <button className='sa_btnOfTrak ms-2'>OnTrack</button>
+                        <p className='sa_btnOfTrak ms-2'>OnTrack</p>
                     </div>
                 </div>
                 <div className='d-flex gap-4'>
                     <div className='d-flex flex-column align-items-center h-100 justify-content-end'>
-                        <p className='sa_textTime'>Time spent</p>
+                        <p className='sa_textTime'>Start Date</p>
                         <Clock />
                     </div>
                     <div className='d-flex flex-column align-items-center h-100 justify-content-end'>
