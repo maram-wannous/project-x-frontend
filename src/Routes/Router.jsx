@@ -56,7 +56,7 @@ export const routes = [
                 element: <WorkLog/>,
             },
             // Admin pages
-         /*   {
+          /*  {
                 path: 'adminprojects',
                 element: <AdminProjects/>,
             },*/
