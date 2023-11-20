@@ -4,7 +4,7 @@ export default function TotalWork(){
          <div className="si-container1"   rounded>
          <div className="d-xl-flex flex-row " >
              <h1>Total work done</h1>
-              <button className="btn btn-info opacity-50 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button className="btn btn-info opacity-30 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                This Week
              </button>
              </div>
