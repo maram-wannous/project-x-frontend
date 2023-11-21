@@ -1,5 +1,3 @@
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import {faPen, faTrashCan} from '@fortawesome/free-solid-svg-icons';
 import {RiDeleteBin5Fill} from 'react-icons/ri'
 import {BiPencil} from 'react-icons/bi'
 import { Link } from 'react-router-dom'
@@ -13,7 +11,7 @@ export default function ViewUsers() {
             </div>
             <div className="RA-bgWhite RA-MarginBox">
                 <div className="table-responsive" style={{maxHeight: "300px"}}>
-                    <table className="table RA-display-7 table  colorGray fa-2x">
+                    <table className="table colorGray fa-2x">
                         <thead>
                         <tr className="py-5 align-middle RA-header">
                             <th scope="col" className="colorDarkGreen">First</th>

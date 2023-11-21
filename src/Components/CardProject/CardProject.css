@@ -19,6 +19,7 @@
     width: 1.5625rem;
     height: 1.51744rem;
     flex-shrink: 0;
+    color: black;
 }
 
 .sa_buttOfftrack {
@@ -28,10 +29,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    width: 5rem;
-    height: 2.1875em;
+    /* width: 5rem;
+    height: 2.1875em; */
     border-radius: 0.25rem;
     background: rgba(194, 131, 131, 0.20);
+    margin: 0;
+    padding: 10px;
 }
 
 .sa_CardText {
@@ -72,6 +75,8 @@
 .sa_CardImageTeam {
     width: 1.84338rem;
     height: 1.86988rem;
+    width: 1.84338rem;
+    height: 1.86988rem;
     flex-shrink: 0;
     border-radius: 50%;
     border: 1px solid #FFF;
@@ -101,4 +106,47 @@
 .sa_CardImageTeam6 {
     left: 25%;
     z-index: 333;
+}
+
+@media (max-width : 1790px) {
+    .sa_cardProject {
+        max-width: 20.10656rem;
+        padding: 10px ;
+    }   
+    .sa_ProjectName {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .sa_FiEdit {
+        width: 1rem;
+        height: 1rem;
+    }
+    .sa_buttOfftrack {
+        font-size: 0.75rem;
+        font-weight: 400;
+        /* width: 4rem;
+        height: 2em; */
+    }
+    .sa_CardText {
+        color: #424242;
+        font-size: 0.75rem;
+    }
+    
+    .sa_BsHourglassBottom {
+        width: 0.88rem;
+        height: 1.1rem;
+    }
+    
+    .sa_DateProject {
+        font-size: 0.875rem;
+    }
+    
+    .sa_SlFolderAlt {
+        width: 1.04338rem;
+        height: 1.06988rem;
+    }
+    .sa_14_issues {
+        font-size: 0.875rem;
+    }
+    
 }

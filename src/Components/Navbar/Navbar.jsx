@@ -7,6 +7,7 @@ import noti_pic1 from "././../../assets/noti_pic1.png";
 import noti_pic2 from "././../../assets/noti_pic2.png";
 import noti_pic3 from "././../../assets/noti_pic3.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
     
@@ -54,7 +55,7 @@ export default function Navbar(){
                 </div>
             </div>
             <div className="d-flex flex-column justify-content-center align-items-end gap-1">
-                <p className="sa_name">Anima Agrawal</p>
+                <Link to={'/dashboard/profile'}><p className="sa_name">Anima Agrawal</p></Link>
                 <p className="sa_info">U.P, India</p>
             </div>
             <div>

@@ -1,5 +1,7 @@
-export default function Performance(){
+import './performance.css';
+
+export default function Performance() {
     return (
-        <div>Performance</div>
-    )
+      <div>Performance</div>
+);
 }

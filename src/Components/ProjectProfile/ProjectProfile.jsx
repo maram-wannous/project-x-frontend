@@ -1,14 +1,4 @@
-
-
-export default function ProjectProfile(){
-    return (   
-        <div>ProjectProfile</div>
-    )
-}
-
-
 import "./ProjectProfile.css";
-
 import art from './../../assets/art.png'
 import dark_art from './../../assets/dark_art.png'
 import emo from './../../assets/emo.png'
@@ -18,9 +8,9 @@ import halloween from './../../assets/halloween.png'
 import gothic from './../../assets/gothic.png'
 import v4m from './../../assets/v4m.png'
 import tim from './../../assets/tim.png'
-import React from "react";
+// import React from "react";
 
-export default function ProjectProfile(props) {
+export default function ProjectProfile() {
   return (
     <div className="sl-projects">
       <h1 className="sl-title">Projects</h1>

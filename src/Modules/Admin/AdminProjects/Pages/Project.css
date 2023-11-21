@@ -1,0 +1,23 @@
+.w-90{
+    width: 90% !important;
+}
+.h-6{
+    height: 4rem;
+}
+.RA-borderRadius{
+    border-radius: 10px;
+}
+.RA-border-table{
+    border-radius: 0.75rem !important;
+    border: 1px solid #D9D9D9 !important;
+}
+.RA-margin-table{
+    margin-bottom: 2.31rem;
+    margin-left: 2.13rem;
+}
+.RA-margin-Right{
+    margin-right: 58.62rem !important;
+}
+.RA-bgLightBlue{
+    background-color: #EEF4FB;
+}
