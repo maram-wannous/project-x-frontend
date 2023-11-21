@@ -1,0 +1,27 @@
+.sa_formUserProject {
+    border-radius: 6px;
+    width: 18.79919rem;
+    height: 2.0315rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    padding: 5px 7px;
+    gap: 5px;
+    background-color: transparent;
+    border: 1px solid #9A93B3;
+}
+.sa_searchUserProject {
+    background-color: transparent;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sa_containerSlideUserProjects ul.slick-dots li.slick-active div {
+    background-color: var(--1, #0A3B83) !important;
+    border-radius: 0.5rem !important;
+    color: white !important;
+}
