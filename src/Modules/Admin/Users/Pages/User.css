@@ -3,7 +3,7 @@
     font-size: 1.5rem ;
 } */
 .RA-bgWhite{
-    background: white;
+    background: white !important;
 }
 .RA-bgBlue {
     background: #F0F6FF;
