@@ -1,0 +1,205 @@
+.si-subtask{
+    background: #fff;
+    border-radius: 15px;
+    width: 921px;
+    height: 1005px ;
+    margin-top: 950px;
+    margin-left:18px ;
+    padding : 42px;
+    position: absolute;
+    z-index:1;
+    zoom: 0.75;
+    overflow: hidden;
+}
+.si-xtitle{
+    display: flex;
+    gap: 650px;
+    white-space:nowrap;
+}
+.si-xtitle .xp{ 
+    width: 19px;
+}
+.si-subtask h1{
+    top: 218px;
+    left: 557px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.si-subtask img {
+    width: 22.57px;
+    height: 20.62px;
+}
+.si-subtask .tags{
+    top:293px ;
+    left:557.63px ;
+}
+.si-subtask .ok{
+    top:342px ;
+    left:557.63px ;
+}
+.si-subtask .person{
+    top:388px ;
+    left:557.63px ;
+}
+.si-subtask .male{
+    top:436px ;
+    left:557.63px ;
+}
+.si-subtask .calendar{
+    top:486px ;
+    left:557.63px ;
+}
+.si-subtask p{
+    color: #9095A0;
+}
+.si-subtask section{
+    gap: 20px;
+    display: flex;
+}
+.si-subtask section .si-hight{
+    background-color:  #F06A6A;
+    border-radius: 22px;
+    width:106.57px ;
+    height:29.11px ;
+    margin-left: 160px;
+    padding: 2px 12px 8px 12px;
+    gap: 10px;
+    text-align: center;
+    color: #fff;
+}
+.si-subtask section .si-comp{
+    background-color:  #46a12a;
+    border-radius: 22px;
+    width:106.57px ;
+    height:29.11px ;
+    margin-left: 165px;
+    padding: 2px 12px 8px 12px;
+    gap: 10px;
+    text-align: center;
+    color: #fff;
+}
+.si-subtask section .ell{
+    width:26.85px ;
+    height:24.26px ;
+    margin-left: 165px;
+}
+.si-subtask section .ell2{
+    width:26.85px ;
+    height:24.26px ;
+    margin-left: 155px;
+}
+.si-subtask section .p1{
+    margin-left: -15px;
+    color: black;
+}
+.si-subtask section .p2{
+    margin-left: 149px;
+    color: black;
+}
+.si-subdiv2 h6{ 
+    top: 550.13px;
+    left: 560px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.si-subdiv2 section{ 
+    display:flex;
+    gap: 20px;
+}
+.si-subdiv2 img {
+    width: 22.57px;
+    height: 20.62px;
+}
+.si-subdiv2 p{
+    color: black;
+}
+.si-div3,.si-div4,.si-div5{
+    position: absolute;
+    border: 1px #D9E6F7 solid;
+    width: 660px;
+    height: 0px;
+    margin-top: 20px;
+}
+.si-last-sec{
+    margin-top: 40px;
+    display:flex;
+}
+.si-grey-sec{ 
+    background: #F3F4F6;
+    border-radius: 5px;
+    width: 798px;
+    height: 96px;
+    margin-top: 29px;
+    margin-left: 25px;
+    padding: 12px;
+    
+}
+.si-grey-sec2{ 
+    background: #F3F4F6;
+    border-radius: 5px;
+    width: 798px;
+    height: auto;
+    margin-top: 29px;
+    margin-left: 25px;
+    padding: 8px;
+    text-align: left;
+}
+.si-flex{
+    display:flex;
+    gap: 20px;
+}
+.si-flex img{
+    width: 15px;
+    height: 15px;
+}
+.si-last-sec .si-fpic{
+    width: 34.21px;
+    height:31.53px ;
+    margin-top: 30px;
+
+}
+.si-dev6{
+    position: absolute;
+    border: 1px #c0cad4 solid;
+    width: 660px;
+    height: 0px;
+    margin-top: 20px;
+}
+.si-grey-sec input{
+    border: none;
+    margin-top: 20px;
+    margin-left: -340px;
+    background: #F3F4F6;
+    width: 798px;
+}
+.si-subtask .save{
+    border-radius: 15px ;
+    margin-top:30px ;
+    margin-left: 60px;
+    background-color:orange ;
+    width: 100px;
+    height: 35px;
+    color: white; 
+}
+.can-btn{
+    color: black;
+    background:#fff ;
+    border: none;
+    margin-top: 30px; 
+}
+.si-select{
+    border: none;  
+    background:none;
+    margin-top: -52px;
+}
+.btndivhidden{
+    display: none;
+}
+.btndiv{
+    display: flex;
+    gap: 20px;
+}
+.printComm{
+    margin-top: 30px;
+    margin-left: 40px;
+}
