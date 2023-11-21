@@ -22,7 +22,6 @@ export default function TaskPopUp () {
     const hundleClick2=()=> setIsVisible(false); 
     const [comment, setComment] = useState("");  
     const [date,setDate]= useState(new Date());
-    
     return(
         <div className="d-flex align-items-center justify-content-center">
              <div className='si-subtask'>
