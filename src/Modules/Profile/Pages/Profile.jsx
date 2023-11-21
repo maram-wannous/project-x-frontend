@@ -7,7 +7,7 @@ import { useState } from 'react';
 export default function Profile() {
     const pageProfile = useState(true);
     return( 
-        <div >
+        <div className='si-profile'>
             <div className='si-profWith'>
              <WorkedWith />
              </div> 

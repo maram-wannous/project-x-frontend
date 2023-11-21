@@ -1,14 +1,16 @@
+.si-profile{
+    zoom: 0.8;
+}
 .si-profWith{
     width: 41.5rem;
     height: 62.875rem;
-    margin-top: 7.375rem;
-    margin-left: 43rem;
+    margin-top: 0;
+    margin-left:370px;
     
 }
 .si-profTotal{
     width: 27.938rem;
     height: 22.25rem;
-    margin-top: -22.25rem;
-    margin-left: 86.063rem;
-    
+    margin-top: -23.25rem;
+    margin-left: 66.5rem;
 }

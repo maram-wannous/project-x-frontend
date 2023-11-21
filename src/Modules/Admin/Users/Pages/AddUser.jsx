@@ -1,14 +1,13 @@
 import './User.css';
 import Profile from '../../../../assets/Foto.png';
 import {Link} from 'react-router-dom';
-import { FaUpload,FaFileUpload } from 'react-icons/fa';
+import { FaUpload } from 'react-icons/fa';
 
 
 export default function AddUser() {
     return (
         <div className="RA-bgBlue">
             <h1 className="RA-HeaderStyle">Add User</h1>
-
 
             <div className="RA-bgWhite RA-MarginBox">
                 <div className="d-flex row">

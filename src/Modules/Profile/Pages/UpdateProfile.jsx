@@ -33,8 +33,7 @@ function UpdateProfile() {
   };
  
   return (
-    <div >
-    
+    <div className="si-updatProfilePage">
     <Form onSubmit={handleSubmit}   className="si-form"> 
      <Row  gap={2}>
      <FormLabel as="h3" className="lbl">Edit Profile</FormLabel>  
