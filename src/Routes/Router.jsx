@@ -7,17 +7,23 @@ import GuardedRoutes from "./GuardedRoutes"
 import Profile from "../Modules/Profile/Pages/Profile";
 import Performance from "../Modules/Performance/Pages/Performance.jsx";
 import WorkLog from "../Modules/WorkLog/Pages/WorkLog";
-/*
-import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects";
-*/
 import UpdateProject from "../Modules/Admin/AdminProjects/Pages/UpdateProject";
-import AdminViewProjects from "../Modules/Admin/AdminProjects/Pages/AdminViewProjects";
 import AddProject from "../Modules/Admin/AdminProjects/Pages/AddProject";
 import ViewUsers from "../Modules/Admin/Users/Pages/ViewUsers";
 import AddUser from "../Modules/Admin/Users/Pages/AddUser";
 import UpdateUser from "../Modules/Admin/Users/Pages/UpdateUser";
 import UpdateProfile from "../Modules/Profile/Pages/UpdateProfile";
 import AdminTasks from "../Modules/Admin/Tasks/Pages/AdminTasks";
+import { AdminAllProjects } from "../Modules/Admin/AdminProjects/Pages/AdminAllProjects";
+import UserTasks from "../Modules/User/Tasks/Pages/UserTasks";
+import UserSubTask from "../Modules/User/Tasks/Pages/UserSubTask";
+import AdminSubTask from "../Modules/Admin/Tasks/Pages/AdminSubTask";
+import AssignTask from "../Modules/Admin/Tasks/Pages/AssignTask";
+import AssignSubTask from "../Modules/Admin/Tasks/Pages/AssignSubTask";
+import TaskKanban from "../Modules/User/Tasks/Pages/TaskKanban";
+import UserProjects from "../Modules/User/Projects/Pages/UserProjects";
+import ProjectDetails from "../Modules/User/Projects/Pages/ProjectDetails";
+import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects.jsx";
 
 const isAuthenticated= true;
 
@@ -44,7 +50,7 @@ export const routes = [
                 element: <Profile/>,
             },
             {
-                path: 'updateprofile',
+                path: 'profile/updateprofile',
                 element: <UpdateProfile/>,
             },
             {
@@ -56,25 +62,37 @@ export const routes = [
                 element: <WorkLog/>,
             },
             // Admin pages
-          /*  {
+            {
                 path: 'adminprojects',
                 element: <AdminProjects/>,
-            },*/
-            {
-                path: 'projects',
-                element: <AdminViewProjects/>,
             },
             {
-                path: 'projects/add',
+                path: 'adminprojects/projects',
+                element: <AdminAllProjects/>,
+            },
+            {
+                path: 'adminprojects/add',
                 element: <AddProject/>,
             },
             {
-                path: 'projects/update',
+                path: 'adminprojects/update',
                 element: <UpdateProject/>,
             },
             {
                 path: 'tasks',
                 element: <AdminTasks/>,
+            },
+            {
+                path: 'tasks/subtask',
+                element: <AdminSubTask/>,
+            },
+            {
+                path: 'tasks/assigntask',
+                element: <AssignTask/>,
+            },
+            {
+                path: 'tasks/assignsubtask',
+                element: <AssignSubTask/>,
             },
             {
                 path: 'users',
@@ -88,6 +106,29 @@ export const routes = [
                 path: 'users/update',
                 element: <UpdateUser/>,
             },
+
+            // User Pages
+            {
+                path: 'usertasks',
+                element: <UserTasks/>,
+            },
+            {
+                path: 'usertasks/subtask',
+                element: <UserSubTask/>,
+            },
+            {
+                path: 'usertasks/kanban',
+                element: <TaskKanban/>,
+            },
+            {
+                path: 'userprojects',
+                element: <UserProjects/>,
+            },
+            {
+                path: 'userprojects/details',
+                element: <ProjectDetails/>,
+            },
+
             
 
             // {

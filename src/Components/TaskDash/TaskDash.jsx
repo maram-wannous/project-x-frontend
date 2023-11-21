@@ -69,13 +69,15 @@ export function TaskDash() {
         },
     };
     return (
-        <div>
-            <div className="RA-bgBlue">
+        <div >
+          {/*  <div className="RA-bgBlue">
                 <div className="RA-bgWhite RA-MarginBoxProj">
                     <h1 className="RA-HeaderStyle colorBlack">Tasks</h1>
-                    <div className="text-center d-flex justify-content-center"><Pie className="w-71" data={data} options={options}/></div>
+                    <div className="text-center d-flex justify-content-center">*/}
+            <Pie className="" data={data} options={options}/>
+     {/*   </div>
                 </div>
-            </div>
+            </div>*/}
         </div>
     );
 }
