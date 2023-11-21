@@ -70,7 +70,7 @@ export const Performance = () => {
                     <YAxis domain={[0, 12]}/>
                     <Tooltip/>
                     <Legend
-                        content={(props) => (
+                        content={() => (
                             <div className="legend">
                                 <CustomLegend color="#ff8500" value="Achieved"/>
                                 <CustomLegend color="#a513ff" value="Target"/>
