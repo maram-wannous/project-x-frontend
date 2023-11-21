@@ -8,7 +8,7 @@ import './dashboard.css'
 export default function Dashboard() {
 
     return (
-        <div className="mr-dashboard">
+        <div className="mr-dashboard">``
             <Navbar/>
             <Sidbar/>
             <div className="mr-outlet">
