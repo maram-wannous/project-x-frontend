@@ -1,5 +1,3 @@
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import {faPen, faTrashCan} from '@fortawesome/free-solid-svg-icons';
 import {RiDeleteBin5Fill} from 'react-icons/ri'
 import {BiPencil} from 'react-icons/bi'
 import { Link } from 'react-router-dom'

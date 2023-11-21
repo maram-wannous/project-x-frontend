@@ -35,3 +35,31 @@
     letter-spacing: 0.0125rem;
     margin-bottom: 0;
 }
+
+@media (max-width : 1847px) {
+    .sa_AdminProjects_ImgDiv {
+        gap: 25px !important;
+        padding: 0 20px !important;
+    }
+    .sa_AdminProjects_ProjectsTitle {
+        font-size: 1.25rem !important;
+    }
+    .sa_AdminProjects_ProjectsViweAll {
+        font-size: 0.875rem !important;
+    }
+    .sa_projectImage {
+        width: 6.75rem !important;
+        height: 6.9375rem !important;
+    }
+}
+
+@media (max-width : 1847px) {
+    .sa_AdminProjects_ImgDiv {
+        gap: 10px !important;
+        padding: 10px 20px !important;
+    }
+    .sa_projectImage {
+        width: 5.75rem !important;
+        height: 5.9375rem !important;
+    }
+}

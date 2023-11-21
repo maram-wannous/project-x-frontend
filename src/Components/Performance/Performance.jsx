@@ -1,4 +1,5 @@
-import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from 'recharts';
+/* eslint-disable react/prop-types */
+import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 import './Performance.css';
 // ResponsiveContainer
 
