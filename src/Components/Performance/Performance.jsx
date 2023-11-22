@@ -55,7 +55,7 @@ export const Performance = () => {
             <div className="custom-chart mw-100">
                 <LineChart
                     width={500}
-                    height={280}
+                    height={250}
                     className="mw-100"
                     data={data}
                     margin={{
