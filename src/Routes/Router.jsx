@@ -5,9 +5,7 @@ import Dashboard from "../Modules/Dashboard/Pages/Dashboard"
 import Home from "../Modules/Dashboard/Pages/Home"
 import GuardedRoutes from "./GuardedRoutes"
 import Profile from "../Modules/Profile/Pages/Profile";
-import Performance from "../Modules/Performance/Pages/Performance";
 import WorkLog from "../Modules/WorkLog/Pages/WorkLog";
-import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects";
 import UpdateProject from "../Modules/Admin/AdminProjects/Pages/UpdateProject";
 import AddProject from "../Modules/Admin/AdminProjects/Pages/AddProject";
 import ViewUsers from "../Modules/Admin/Users/Pages/ViewUsers";
@@ -24,6 +22,8 @@ import AssignSubTask from "../Modules/Admin/Tasks/Pages/AssignSubTask";
 import TaskKanban from "../Modules/User/Tasks/Pages/TaskKanban";
 import UserProjects from "../Modules/User/Projects/Pages/UserProjects";
 import ProjectDetails from "../Modules/User/Projects/Pages/ProjectDetails";
+import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects.jsx";
+import PerformancePage from "../Modules/Performance/Pages/PerformancePage.jsx";
 
 const isAuthenticated= true;
 
@@ -55,7 +55,7 @@ export const routes = [
             },
             {
                 path: 'performance',
-                element: <Performance/>,
+                element: <PerformancePage/>,
             },
             {
                 path: 'worklog',

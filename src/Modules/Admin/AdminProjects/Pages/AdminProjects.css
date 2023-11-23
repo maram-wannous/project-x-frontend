@@ -21,7 +21,18 @@
     height: 100%;
 }
 
-.sa_divProjectsStats {
+.sa_divStaPerfTMem .sa_divstaperf{
+    margin-bottom: 15px;
+}
+.sa_divStaPerfTMem .sa_divstaperf .RA-bgWhite {
+    height: 250px;
+}
+.sa_divStaPerfTMem .sa_divstaperf .RA-bgWhite .custom-chart .recharts-legend-wrapper .legend {
+    padding: 20px;
+    font-size: small;
+}
+
+/* .sa_divProjectsStats {
     width: 40%;
     height: 20.3125rem;
     border-radius: 0.5rem;
@@ -36,7 +47,7 @@
     background-color: #FFF;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
     padding: 0.63rem 1.2rem;
-}
+} */
 
 .sa_divTeamMember {
     width: 97%;

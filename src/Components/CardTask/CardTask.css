@@ -36,7 +36,7 @@
     line-height: 1.25rem;
 }
 
-.sa_btnCancel {
+.sa_btnType {
     display: flex;
     width: 4.39025rem;
     height: 1.53125rem;
@@ -54,7 +54,7 @@
     line-height: normal;
 }
 
-.sa_btnComplete {
+.sa_btnStatus {
     display: flex;
     width: 6.5375rem;
     height: 1.5625rem;
@@ -80,6 +80,21 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1.25rem;
+}
+
+.sa-startdate {
+    border-radius: 0.9375rem;
+    background: rgba(75, 166, 101, 0.11);
+    padding: 5px;
+    flex-shrink: 0;
+    color: #4ba665b9;
+}
+.sa-enddate {
+    background-color: #FBE7E8;
+    border-radius: 0.9375rem;
+    padding: 5px;
+    flex-shrink: 0;
+    color: #A30D11
 }
 
 .sa_DivImgTask {

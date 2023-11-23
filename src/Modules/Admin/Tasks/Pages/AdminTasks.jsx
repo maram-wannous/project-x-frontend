@@ -40,7 +40,7 @@ export default function AdminTasks() {
                                 <img className='sa_imgTeam' src={imgTeam} alt="" />
                             </div>
                         </div>
-                        <button className='sa_btnOfTrak ms-2'>OnTrack</button>
+                        <p className='sa_btnOfTrak ms-2'>OnTrack</p>
                     </div>
                 </div>
                 <div className='d-flex gap-4'>
@@ -48,7 +48,7 @@ export default function AdminTasks() {
                         <Link to={'/dashboard/tasks/assigntask'}><button className='btn'>Assign Task</button></Link>
                     </div>
                     <div className='d-flex flex-column align-items-center h-100 justify-content-end'>
-                        <p className='sa_textTime'>Time spent</p>
+                        <p className='sa_textTime'>Start Date</p>
                         <Clock />
                     </div>
                     <div className='d-flex flex-column align-items-center h-100 justify-content-end'>

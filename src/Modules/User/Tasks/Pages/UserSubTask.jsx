@@ -8,8 +8,8 @@ export default function UserSubTask() {
     return (
         <div>
             <p className="header-style">Task / Subtasks</p>
-            <button onClick={() => setOpenPopUp(!openPopUp)}>click to show popup</button>
-            {openPopUp && <TaskPopUp/>}
+            <button onClick={() => setOpenPopUp(!openPopUp)}>openPopUp</button>
+                {openPopUp && <TaskPopUp/>}
             <div className="sa_bodyBox sa_divTitle">
                 <CardTask />
                 <div className="d-flex align-items-center flex-column mt-4">

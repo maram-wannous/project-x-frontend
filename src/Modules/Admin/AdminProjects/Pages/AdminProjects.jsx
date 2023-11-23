@@ -13,7 +13,34 @@ export default function AdminProjects() {
                 <p className="header-style">Projects</p>
             </div>
             <div className="sa_divBody gap-1">
-                <div className="sa_divStaPerfTMem d-flex justify-content-center align-items-center flex-wrap gap-2">
+            <div className="sa_divStaPerfTMem">
+                    <div className="row sa_divstaperf">
+                        <div className="col-md-6 mt-2">
+                            <div className="RA-bgBlue">
+                                <div className="RA-bgWhite RA-MarginBoxProj">
+                                    <div className="text-center d-flex justify-content-center ">
+                                        <div className="w-71">
+                                            <TaskDash/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 mt-2">
+                            <div className="RA-bgBlue">
+                                <div className="RA-bgWhite RA-MarginBoxProj ">
+                                    <div className="">
+                                        <Performance/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row sa_divTeamMember py-4">
+                        <TeamMember/>
+                    </div>
+                </div>
+                {/* <div className="sa_divStaPerfTMem d-flex justify-content-center align-items-center flex-wrap gap-2">
                     <div className="sa_divProjectsStats">
                         <TaskDash />
                     </div>
@@ -23,7 +50,7 @@ export default function AdminProjects() {
                     <div className="sa_divTeamMember py-4">
                         <TeamMember/>
                     </div>
-                </div>
+                </div> */}
                 <div className="sa_divProjects">
                     <AdminProjects_Projects />
                 </div>
