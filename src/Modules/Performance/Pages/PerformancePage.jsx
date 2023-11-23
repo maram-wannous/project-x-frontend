@@ -1,4 +1,5 @@
-import WorkLog from '../../../Components/WorkLog/WorkLog'
+import WorkLog from '../../../Components/WorkLog/WorkLog';
+import Performance from '../../../Components/Performance/Performance';
 import './Performance.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
