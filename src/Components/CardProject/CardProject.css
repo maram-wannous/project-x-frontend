@@ -29,10 +29,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    width: 5rem;
-    height: 2.1875em;
+    /* width: 5rem;
+    height: 2.1875em; */
     border-radius: 0.25rem;
     background: rgba(194, 131, 131, 0.20);
+    margin: 0;
+    padding: 10px;
 }
 
 .sa_CardText {
@@ -122,8 +124,8 @@
     .sa_buttOfftrack {
         font-size: 0.75rem;
         font-weight: 400;
-        width: 4rem;
-        height: 2em;
+        /* width: 4rem;
+        height: 2em; */
     }
     .sa_CardText {
         color: #424242;

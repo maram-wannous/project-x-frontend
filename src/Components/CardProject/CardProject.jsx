@@ -14,7 +14,7 @@ export const CardProject = () => {
                 <p className='sa_ProjectName'>Adoddle</p>
                 <Link to={'/dashboard/adminprojects/update'}><FiEdit className='sa_FiEdit'/></Link>
             </div>
-            <button className='sa_buttOfftrack'>Offtrack</button>
+            <p className='sa_buttOfftrack'>Offtrack</p>
         </div>
         <div className='pt-4 pb-4 px-2 sa_CardText'>
             <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>

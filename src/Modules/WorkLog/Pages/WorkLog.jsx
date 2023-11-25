@@ -5,6 +5,7 @@ import R4 from './../../../assets/R4.png';
 import R5 from './../../../assets/R5.png'; 
 import TotalWork from './../../../Components/TotalWork/TotalWork';
 import './WorkLog.css';
+
 export default function WorkLog(){
     return (
         <div className='si-workdiv'>

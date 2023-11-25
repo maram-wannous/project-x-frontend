@@ -1,0 +1,12 @@
+.sa_backClock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 0.9375rem;
+    background: rgba(75, 166, 101, 0.11);
+    width: 9.09688rem;
+    height: 2.375rem;
+    flex-shrink: 0;
+    color: #4ba665b9;
+}

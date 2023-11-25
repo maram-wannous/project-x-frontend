@@ -1,0 +1,234 @@
+/* .sa_CardImage1 {
+    left: 21.8% !important;
+}
+
+.sa_CardImage2 {
+    left: 23.1% !important;
+}
+
+.sa_CardImage3 {
+    left: 24.3% !important;
+}
+
+.sa_CardImage4 {
+    left: 25.5% !important;
+}
+
+.sa_CardImage5 {
+    left: 26.7% !important;
+}
+
+.sa_CardImage6 {
+    left: 28% !important;
+} */
+
+.sa_btnOfTrak {
+    /* width: 7.25rem;
+    height: 2.375rem; */
+    background-color: rgba(75, 166, 101, 0.11);
+    border-radius: 15px;
+    color: var(--3, #71AA27);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 10px;
+}
+
+.sa_textTime {
+    color: #656565;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sa_bodyBox {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #FFF;
+}
+
+.sa_BiCommentDots {
+    color: #5C5967;
+    width: 1.36519rem;
+    height: 1.29925rem;
+}
+
+.sa_textBottomTaska {
+    color: #5C5967;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* 
+@media (max-width : 1890px) {
+    .sa_CardImage1 {
+        left: 22.5% !important;
+    }
+    
+    .sa_CardImage2 {
+        left: 23.7% !important;
+    }
+    
+    .sa_CardImage3 {
+        left: 25% !important;
+    }
+    
+    .sa_CardImage4 {
+        left: 26.2% !important;
+    }
+    
+    .sa_CardImage5 {
+        left: 27.5% !important;
+    }
+    
+    .sa_CardImage6 {
+        left: 28.8% !important;
+    }
+}
+@media (max-width : 1810px) {
+    .sa_CardImage1 {
+        left: 23% !important;
+    }
+    
+    .sa_CardImage2 {
+        left: 24.2% !important;
+    }
+    
+    .sa_CardImage3 {
+        left: 25.5% !important;
+    }
+    
+    .sa_CardImage4 {
+        left: 26.8% !important;
+    }
+    
+    .sa_CardImage5 {
+        left: 28.1% !important;
+    }
+    
+    .sa_CardImage6 {
+        left: 29.4% !important;
+    }
+    .sa_btnOfTrak {
+        left: 32% !important;
+    }
+}
+@media (max-width : 1790px) {
+    .sa_CardImage1 {
+        left: 23.8% !important;
+    }
+    
+    .sa_CardImage2 {
+        left: 25.3% !important;
+    }
+    
+    .sa_CardImage3 {
+        left: 26.7% !important;
+    }
+    
+    .sa_CardImage4 {
+        left: 28% !important;
+    }
+    
+    .sa_CardImage5 {
+        left: 28% !important;
+    }
+    
+    .sa_CardImage6 {
+        left: 29.4% !important;
+    }
+    .sa_btnOfTrak {
+        left: 33% !important;
+    }
+}
+@media (max-width : 1720px) {
+    .sa_CardImage1 {
+        left: 24.6% !important;
+    }
+    
+    .sa_CardImage2 {
+        left: 26.1% !important;
+    }
+    
+    .sa_CardImage3 {
+        left: 27.5% !important;
+    }
+    
+    .sa_CardImage4 {
+        left: 28.9% !important;
+    }
+    
+    .sa_CardImage5 {
+        left: 30.3% !important;
+    }
+    
+    .sa_CardImage6 {
+        left: 31.8% !important;
+    }
+    .sa_btnOfTrak {
+        left: 35% !important;
+    }
+}
+@media (max-width : 1665px) {
+    .sa_CardImage1 {
+        left: 25.2% !important;
+    }
+    
+    .sa_CardImage2 {
+        left: 26.7% !important;
+    }
+    
+    .sa_CardImage3 {
+        left: 28.2% !important;
+    }
+    
+    .sa_CardImage4 {
+        left: 29.7% !important;
+    }
+    
+    .sa_CardImage5 {
+        left: 31.2% !important;
+    }
+    
+    .sa_CardImage6 {
+        left: 32.8% !important;
+    }
+    .sa_btnOfTrak {
+        left: 36% !important;
+    }
+}
+@media (max-width : 1615px) {
+    .sa_CardImage1 {
+        left: 26% !important;
+    }
+    
+    .sa_CardImage2 {
+        left: 27.6% !important;
+    }
+    
+    .sa_CardImage3 {
+        left: 29.2% !important;
+    }
+    
+    .sa_CardImage4 {
+        left: 30.8% !important;
+    }
+    
+    .sa_CardImage5 {
+        left: 32.3% !important;
+    }
+    
+    .sa_CardImage6 {
+        left: 33.9% !important;
+    }
+    .sa_btnOfTrak {
+        left: 37% !important;
+    }
+} */
