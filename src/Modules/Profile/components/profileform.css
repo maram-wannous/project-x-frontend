@@ -1,0 +1,25 @@
+.si-form{ 
+    position: relative;
+    padding: 20px;
+    width: 450px;
+    border-color: #a7a2a2; 
+    border-radius: 10px;
+    box-shadow: 1px 3px  #c9c1c1;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.si-form .input{
+    width: 200px;
+    height: 100px;
+} 
+.si-form .lbl{
+    margin-bottom: 40px;
+}
+.si-form button{
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    width: 150px;
+    height: auto;
+}

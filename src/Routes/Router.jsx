@@ -19,7 +19,6 @@ import UserSubTask from "../Modules/User/Tasks/Pages/UserSubTask";
 import AdminSubTask from "../Modules/Admin/Tasks/Pages/AdminSubTask";
 import AssignTask from "../Modules/Admin/Tasks/Pages/AssignTask";
 import AssignSubTask from "../Modules/Admin/Tasks/Pages/AssignSubTask";
-import TaskKanban from "../Modules/User/Tasks/Pages/TaskKanban";
 import UserProjects from "../Modules/User/Projects/Pages/UserProjects";
 import ProjectDetails from "../Modules/User/Projects/Pages/ProjectDetails";
 import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects.jsx";
@@ -115,10 +114,6 @@ export const routes = [
             {
                 path: 'usertasks/subtask',
                 element: <UserSubTask/>,
-            },
-            {
-                path: 'usertasks/kanban',
-                element: <TaskKanban/>,
             },
             {
                 path: 'userprojects',

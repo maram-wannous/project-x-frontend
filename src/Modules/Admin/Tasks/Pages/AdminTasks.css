@@ -66,8 +66,8 @@
     font-weight: 500;
     line-height: normal;
 }
-
-/* @media (max-width : 1890px) {
+/* 
+@media (max-width : 1890px) {
     .sa_CardImage1 {
         left: 22.5% !important;
     }

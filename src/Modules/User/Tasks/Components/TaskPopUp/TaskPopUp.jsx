@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import i1 from './../../../../../assets/Tags-Sub.png';
 import i2 from './../../../../../assets/Ok-Sub.png';
 import i3 from './../../../../../assets/Person-Sub.png';
@@ -16,18 +17,20 @@ import d6 from './../../../../../assets/Group6.png';
 import x from './../../../../../assets/iconx.png';
 import './TaskPopUp.css';
 import { useState } from 'react';
-export default function TaskPopUp () {
+import { Link } from 'react-router-dom';
+
+export default function TaskPopUp ({closePopup, openPopUp}) {
     const [isVisible,setIsVisible]= useState(false);
     const hundleClick=()=> setIsVisible(true); 
     const hundleClick2=()=> setIsVisible(false); 
     const [comment, setComment] = useState("");  
-    const [date,setDate]= useState(new Date());
+    const [date]= useState(new Date());
     return(
         <div className="d-flex align-items-center justify-content-center">
              <div className='si-subtask'>
                 <div className='si-xtitle'>
                 <p>Project / Task ID-1234</p>
-                <img className='xp' onClick="./UserTasks.jsx" src={x}/>
+                <Link to={'/dashboard/usertasks/subtask'}><img className='xp' onClick={() => closePopup(openPopUp)} src={x}/></Link>
                 </div>
                 <h1>Make a Suitable form</h1>
                 <section>
@@ -113,4 +116,4 @@ export default function TaskPopUp () {
             </div>
         </div>
     )
-};
+}

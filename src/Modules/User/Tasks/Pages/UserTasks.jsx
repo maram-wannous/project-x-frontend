@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './UserTasks.css'
-import { CiCalendar } from "react-icons/ci";
+// import { CiCalendar } from "react-icons/ci";
 import { CardTask } from '../../../../Components/CardTask/CardTask';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -49,7 +49,7 @@ export default function UserTasks() {
         <div>
             <div className='d-flex align-items-center justify-content-between px-2 '>
                 <p className="header-style mb-0 ">Tasks</p>
-                <Link to={'/dashboard/usertasks/Kanban'}><button className='sa_btnKanbanView'><CiCalendar className='sa_IconBtnKanban' />Kanban View</button></Link>
+                {/* <Link to={'/dashboard/usertasks/Kanban'}><button className='sa_btnKanbanView'><CiCalendar className='sa_IconBtnKanban' />Kanban View</button></Link> */}
             </div>
             <Slider {...settings} className='sa_containerSlideAllProjects'>
                 <div className='sa_bodyBox bg-transparent'>
