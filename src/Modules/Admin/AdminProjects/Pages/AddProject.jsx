@@ -38,7 +38,7 @@ export default function AddProject(){
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex mt-3 ms-3">
+                    <div className="d-flex mt-3">
                         <div className="dropdown mx-4 col-md-6 col-sm-6 align-items-end justify-content-center d-flex">
                             <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                 Status

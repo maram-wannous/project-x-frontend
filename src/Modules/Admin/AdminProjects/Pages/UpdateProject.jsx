@@ -39,7 +39,7 @@ export default function UpdateProject(){
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex mt-3 ms-3">
+                    <div className="d-flex mt-3">
                         <div className="dropdown mx-4 col-md-6 col-sm-6 align-items-end justify-content-center d-flex">
                             <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                 Status
@@ -110,7 +110,7 @@ export default function UpdateProject(){
                 {/*</div>*/}
                 <div className="d-flex justify-content-end">
                     <button className="btn mx-2 px-1 py-1 fs-5">Create</button>
-                    <button className="btn colorOrange RA-bgLightBlue w-50 fs-5 px-1 py-1">Delete</button>
+                    <button className="btn colorOrange RA-bgLightBlue fs-5 px-1 py-1">Delete</button>
                 </div>
             </div>
         </div>
