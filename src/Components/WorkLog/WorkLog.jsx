@@ -27,16 +27,10 @@ const WorkLog = () => {
             },
         ],
     };
-    return (/*<div className="RA-bgBlue">
-        <div className="RA-bgWhite RA-MarginBoxProj">
-        <h1 className="RA-HeaderStyle colorBlack">Work Log</h1>
-            <div  className="text-center d-flex justify-content-center">*/
+    return (
         <div>
             <Doughnut data={data}/>
         </div>
-        /*       </div>
-               </div>
-       </div>*/
 
     );
 }

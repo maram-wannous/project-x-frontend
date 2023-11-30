@@ -7,14 +7,13 @@ import { useState } from 'react';
 export default function Profile() {
     const pageProfile = useState(true);
     return( 
-        <div className='si-profile'>
-            <div className='si-profWith'>
-             <WorkedWith />
-             </div> 
-             <div className='si-profTotal'> 
-             <TotalWork /></div>
-             <ProjectInfo pageProfile={pageProfile} />
-             <ProjectProfile/> 
+        <div className="container d-flex flex-wrap py-4">
+            <ProjectInfo pageProfile={pageProfile} />
+            <WorkedWith />
+            <div>
+                <ProjectProfile/>
+                <TotalWork />
+            </div>
         </div>
     );
 }

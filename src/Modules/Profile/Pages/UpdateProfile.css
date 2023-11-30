@@ -1,85 +1,13 @@
-.si-updatProfilePage{
-    zoom: 0.9;
+.mr-updateprofile .si-container1 {
+    width: 250px;
+    height: 250px;
 }
-.si-form{ 
-    padding: 42px;
-    width: 694px;
-    height: 729px;
-    margin-top: 20px;
-    margin-left: 400px;
-    border-color: #a7a2a2; 
-    border-radius: 10px;
-    box-shadow: 1px 3px  #c9c1c1;
-    background-color: #fff;
+.mr-updateprofile .si-container1 p {
+    font-size: 14px;
 }
-.si-form .input{
-    width: 300px;
-    height: 100px;
-} 
-.si-form .lbl{
-    margin-bottom: 40px;
+.mr-updateprofile .si-container1 .btn {
+    font-size: 12px;
 }
-.si-form button{
-    margin-top: 130px;
-    width: 150px;
-    height: auto;
-    margin-bottom: -70px;
-    margin-left: -100px;
-}
-.si-info{
-    margin-top: 268px;
-    margin-left: 30px;
-}
- 
-.si-updateTotal{
-    width: 323px;
-    height:375px;
-    margin-top: 15px;
-    margin-left: 48px;
-    white-space: nowrap;
-     
-}
-.si-updateTotal button{
-    margin-left: -45px;
-}
-.si-updateTotal .si-container1 .si-circle{
-    margin-left: 30px;
-}
-
-.si-updateProf .sl-projects{
-    width: 447px;
-    height: 428px;
-    margin-top: -1080px;
-    margin-left: 1120px; 
-}
-.si-updateProf .art{
-    display: none;
-}
-.si-updateProf .gothic{
-    display: none;
-}
-.si-updateProf .halloween{
-    display: none;
-} 
-.si-updateProf .halloween-p{
-    display: none;
-} 
-.si-updateProf .gothic-p{
-    display: none;
-} 
-.si-updateProf .art-p{
-    display: none;
-} 
-.si-updateWith{
-    width: 446px;
-    height:576px;
-    margin-top: 20px;
-    margin-left: 1120px;  
-    font-size: small;
-}  
-.si-updateWith .si-container2 .si-col{
-    display: none;
-}
-.si-updateWith .si-container2 .btn{
-    margin-left: 190px;
+.mr-updateprofile .si-container2 {
+    width: 350px;
 }

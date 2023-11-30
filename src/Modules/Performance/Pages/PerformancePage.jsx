@@ -77,14 +77,6 @@ export default function PerformancePage() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="d-flex justify-content-center align-items-center flex-wrap gap-1 mb-2">
-                    <div className="sa_divPerformancePerformance">
-                        <Performance/>
-                    </div>
-                    <div className="sa_divPerformanceWorkLog">
-                        <WorkLog className='maram-log'/>
-                    </div>
-                </div> */}
                 <Slider {...settings} className=' sa_containerSlidePerformanc'>
                 <div className='sa_bodyBox bg-transparent mb-2'>
                     <div className='sa_backTask'>

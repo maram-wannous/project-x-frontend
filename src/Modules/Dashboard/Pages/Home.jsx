@@ -13,11 +13,11 @@ export default function Home() {
     return (
         <div className="mh-100vh RA-bgBlue">
             <div className="header-style">
-                <h1>Dashboard</h1>
+                <h1 className='header-style' >Dashboard</h1>
             </div>
 
             <div>
-                <div className="row">
+                <div className="row px-4">
                     <div className="col-md-6 mt-2">
                         <ProjectDash/>
                     </div>
@@ -34,7 +34,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row px-4">
                     <div className="col-md-6 mt-2">
                         <div className="RA-bgBlue">
                             <div className="RA-bgWhite RA-MarginBoxProj">

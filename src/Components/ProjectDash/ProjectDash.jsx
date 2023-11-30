@@ -3,8 +3,6 @@ import './ProjectDash.css';
 
 export default function ProjectDash() {
     return (
-        /*  <div className="RA-bgWhite RA-MarginBoxProj">*/
-
         <div className="RA-bgBlue">
             <div className="RA-bgWhite RA-MarginBoxProj ">
                 <h1 className="RA-HeaderStyle colorBlack">Projects</h1>

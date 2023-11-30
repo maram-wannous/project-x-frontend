@@ -48,10 +48,6 @@ export const Performance = () => {
 
     return (
         <div>
-            {/* <div className="RA-bgBlue">
-            <div className="RA-bgWhite RA-MarginBoxProj ">
-                <div className="">
-                    <h1 className="RA-HeaderStyle font-weight-bold colorBlack">Performance</h1>*/}
             <div className="custom-chart mw-100">
                 <LineChart
                     width={500}

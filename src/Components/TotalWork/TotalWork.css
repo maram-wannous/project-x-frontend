@@ -1,10 +1,13 @@
 .si-container1{
-    
+    width: 350px;
+    height: 350px;
     border-radius: 15px;
     background-color:white;
-    padding: 52px; 
+    padding: 20px; 
     border-color: #cfd3d4; 
     box-shadow: 1px 3px  #c9c1c1;
+    margin: 10px;
+    position: relative;
 }
 .si-container1 .si-circle {
     width: 150px;
@@ -17,14 +20,21 @@
     font-weight: bolder;
     text-align: center;
     font-size: x-large;
-    padding-top:48px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%, -50%);
+    /*padding-top:48px ;
     margin-left: 30%;
     margin-top: 25px;
     margin-bottom: 20px;
-  }
-  .si-container1 h1{
-    font-size: small;
-    font-weight: bold;
-    margin-right: 100px;
-    margin-top: 5px;
-  }
+    */
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
