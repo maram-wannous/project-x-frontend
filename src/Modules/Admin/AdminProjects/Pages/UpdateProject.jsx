@@ -12,7 +12,7 @@ export default function UpdateProject(){
                             className="d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                             <label htmlFor="fn" className="RA-Label ps-2">Project Title</label>
                             <input type="email" className="form-control ms-2 mt-3 d-flex" id="fn"
-                                   aria-describedby="emailHelp">
+                                   aria-describedby="emailHelp" required>
                             </input>
                         </div>
                     </div>
@@ -21,7 +21,7 @@ export default function UpdateProject(){
                             className=" d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                             <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2"> Project Type</label>
                             <input type="text" className="form-control  mt-3 " id="ln"
-                                   aria-describedby="emailHelp">
+                                   aria-describedby="emailHelp" required>
                             </input>
                         </div>
                     </div>
@@ -29,12 +29,12 @@ export default function UpdateProject(){
                         <div className="row">
                             <div className="col-md-6 d-flex flex-column align-items-lg-start align-items-center">
                                 <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2">Start Date</label>
-                                <input type="date" className="form-control  mt-3 ">
+                                <input type="date" className="form-control  mt-3 " required>
                                 </input>
                             </div>
                             <div className="col-md-6 d-flex flex-column align-items-lg-start align-items-center">
                                 <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2">End Date</label>
-                                <input type="date" className="form-control mt-3 ">
+                                <input type="date" className="form-control mt-3 " required>
                                 </input>
                             </div>
                         </div>
@@ -43,16 +43,6 @@ export default function UpdateProject(){
                         <div className="dropdown mx-4 col-md-6 col-sm-6 align-items-end justify-content-center d-flex">
                             <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                 Status
-                            </button>
-                            <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <li><button className="dropdown-item" type="button">Action</button></li>
-                                <li><button className="dropdown-item" type="button">Another action</button></li>
-                                <li><button className="dropdown-item" type="button">Something else here</button></li>
-                            </ul>
-                        </div>
-                        <div className="dropdown col-md-6 col-sm-6 align-items-center d-flex">
-                            <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                Priority
                             </button>
                             <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li><button className="dropdown-item" type="button">Action</button></li>

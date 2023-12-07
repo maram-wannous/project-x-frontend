@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './CardProject.css'
 import { FiEdit } from "react-icons/fi";
 import { BsHourglassBottom } from "react-icons/bs";
@@ -6,23 +7,22 @@ import imgTeam from './../../assets/imgTeam.png';
 import { Link } from 'react-router-dom'
 
 
-export const CardProject = () => {
+export const CardProject = ({id, title, end_date, description, status}) => {
   return (
     <div className='sa_cardProject'>
         <div className='d-flex align-items-center justify-content-between border-bottom pb-2'>
             <div className='d-flex align-items-center gap-3 '>
-                <p className='sa_ProjectName'>Adoddle</p>
-                <Link to={'/dashboard/adminprojects/update'}><FiEdit className='sa_FiEdit'/></Link>
+                <p className='sa_ProjectName'>{title}</p>
+                <Link to={`/dashboard/adminprojects/${id}`}><FiEdit className='sa_FiEdit'/></Link>
             </div>
-            <p className='sa_buttOfftrack'>Offtrack</p>
+            <p className='sa_buttOfftrack'>{status}</p>
         </div>
         <div className='pt-4 pb-4 px-2 sa_CardText'>
-            <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
-            <p className='mb-0'> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p className='mb-0'>{description}</p>
         </div>
         <div className='d-flex align-items-center gap-2 pb-3'>
             <BsHourglassBottom className='sa_BsHourglassBottom'/>
-            <p className='sa_DateProject mb-0'>05 APRIL 2023</p>
+            <p className='sa_DateProject mb-0'>{end_date}</p>
         </div>
         <div className='d-flex align-items-center justify-content-between px-2 py-3'>
             <div className='d-flex align-items-center position-relative'>

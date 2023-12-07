@@ -40,6 +40,7 @@ export default function ProfileForm() {
               placeholder="Yash"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
           </Form.Group>
           <Form.Group   className="input" controlId="name">
@@ -49,6 +50,7 @@ export default function ProfileForm() {
               placeholder="Ghori"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
           </Form.Group>
           <Form.Group   className="input" controlId="email">
@@ -58,6 +60,7 @@ export default function ProfileForm() {
               placeholder="yghori@asite.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </Form.Group> 
           <Form.Group   className="input" controlId="pasword">
@@ -67,6 +70,7 @@ export default function ProfileForm() {
               placeholder="Change Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </Form.Group> 
           </Row> 
@@ -80,11 +84,12 @@ export default function ProfileForm() {
               placeholder="8023456789"
               value={value} 
               onChange={e => setValue(e.target.value)}
+              required
             />
           </Form.Group>
           <Form.Group className="input" controlId="countrySelect">
             <Form.Label>Nationality</Form.Label>
-            <Form.Control as="select" value={selectedCountry} onChange={handleCountryChange}>
+            <Form.Control as="select" value={selectedCountry} onChange={handleCountryChange} required>
               {countries.map((country) => (
                 <option key={country.code} value={country.code}>
                   {country.name}
@@ -94,7 +99,7 @@ export default function ProfileForm() {
           </Form.Group>
           <Form.Group   className="input" controlId="Designation">
             <Form.Label>Designation</Form.Label>
-            <Form.Select >
+            <Form.Select required>
             <option>UI Intern</option>
           </Form.Select>
           </Form.Group> 

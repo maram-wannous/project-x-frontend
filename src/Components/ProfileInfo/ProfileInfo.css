@@ -70,3 +70,8 @@
     margin-bottom: 10px;
     margin-right: 30px;
 }
+
+.sl-info ul li .mr-up-del-btn {
+    color: #FF8500;
+    font-weight: 400;
+}

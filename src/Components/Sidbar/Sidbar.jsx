@@ -35,7 +35,8 @@ export default function Sidbar() {
                     width: windowSize.width < 991 ? (isOpen? '240px' : 'fit-content') : '240px'
                 }}
             >
-                    <NavLink to='' className="d-flex align-items-center gap-2 sa_textSidbar"
+                   
+                    <NavLink to='/dashboard' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <BiSolidHome />
