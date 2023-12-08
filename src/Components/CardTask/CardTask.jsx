@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
 import './CardTask.css'
 import { HiOutlineLightBulb } from "react-icons/hi";
 import ImgTask from './../../assets/ImgTask.png';
 import { Link } from "react-router-dom";
 import { MdOutlineInsertComment } from "react-icons/md";
 import { CiCalendar } from "react-icons/ci";
+import { RiDeleteBin5Fill } from 'react-icons/ri';
 
-export const CardTask = () => {
+export const CardTask = ({isAdmin}) => {
 
     return (
         <div className='sa_CardTask'>
@@ -42,7 +44,10 @@ export const CardTask = () => {
                     <div className='sa_DivImgTask'>
                         <img src={ImgTask} alt="" />
                     </div>
-                    <Link to={'/dashboard/tasks/subtask'}><button><MdOutlineInsertComment className='sa_btnToSubTask' /></button></Link>
+                    <Link to={isAdmin ? '/dashboard/tasks/subtask' : '/dashboard/usertasks/subtask'}>
+                        <button><MdOutlineInsertComment className='sa_btnToSubTask' /></button>
+                    </Link>
+                    {isAdmin && <div className='mr-delet-task'><RiDeleteBin5Fill/></div>}
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@ export default function ViewUsers() {
     const [noUsers, setNoUsers] = useState(false);
     const token = localStorage.getItem('bearer');
 
+
     useEffect(()=>{
         axios.get('http://127.0.0.1:8000/api/users', {
             headers: {
@@ -17,7 +18,7 @@ export default function ViewUsers() {
                 AUTHORIZATION: `Bearer ${token}`,
                 },
         })
-        .then((data)=> {setUsers(data.data)})
+        .then((data)=> setUsers(data.data.users))
         .then(()=> setNoUsers(true))
         .catch((err)=> console.log(err));
     },[]);
@@ -27,7 +28,7 @@ export default function ViewUsers() {
         
     // }
 
-    const usersShow = users.map((item, key) => {
+    const usersShow = users.map((item, key) => (
         <tr key={key} className="py-5 align-middle fw-normal">
             <td>{item.first_name}</td>
             <td>{item.last_name}</td>
@@ -44,7 +45,7 @@ export default function ViewUsers() {
                 </div>
             </td>
         </tr>
-        })
+    ))
 
 
     return (

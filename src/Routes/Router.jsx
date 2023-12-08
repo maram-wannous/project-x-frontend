@@ -23,6 +23,7 @@ import ProjectDetails from "../Modules/User/Projects/Pages/ProjectDetails";
 import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects.jsx";
 import PerformancePage from "../Modules/Performance/Pages/PerformancePage.jsx";
 import { Navigate } from "react-router-dom";
+import AdminProjectDetails from "../Modules/Admin/AdminProjects/Pages/AdminProjectDetails.jsx";
 
 const isAuthenticated= localStorage.getItem('bearer');
 
@@ -73,8 +74,12 @@ export const routes = [
                 element: <AddProject/>,
             },
             {
-                path: 'adminprojects/:id',
+                path: 'adminprojects/update/:id',
                 element: <UpdateProject/>,
+            },
+            {
+                path: 'adminprojects/details/1',
+                element: <AdminProjectDetails/>,
             },
             {
                 path: 'tasks',

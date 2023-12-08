@@ -19,14 +19,16 @@ export default function AddUser() {
     const [country, setCountry] = useState("");
     const [designation, setDesignation] = useState("");
     const [department, setDepartment] = useState("");
-    const [image, setImage] = useState('');
+    const [image, setImage] = useState(null);
+    const [imgSrc, setImgSrc] = useState("")
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
     const token = localStorage.getItem('bearer');
 
     const handleUploadImage = (file) => {
         const url = URL.createObjectURL(file);
-        setImage(url);
+        setImage(file);
+        setImgSrc(url);
       };
 
     async function HandleSubmite(e) {
@@ -52,7 +54,7 @@ export default function AddUser() {
             });
             setLoading(false);
             console.log(res);
-            // window.location.pathname= '/dashboard/users';
+            window.location.pathname= '/dashboard/users';
         }catch(err){
             setLoading(false);
             console.log(err);
@@ -135,7 +137,8 @@ export default function AddUser() {
                             className="d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                             <label htmlFor="password" className="RA-Label RA-fsLabel">Password</label>
                             <input type="password" className="form-control RA-Field" id="password"
-                                   aria-describedby="emailHelp" 
+                                   aria-describedby="emailHelp"
+                                   minLength={6}
                                    value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                    required>
@@ -184,13 +187,11 @@ export default function AddUser() {
                             </div>
                         </div>
                         <div className='w-100 d-flex justify-content-center  align-content-center mt-3'>
-                        {image && <img src={image} alt="" width={150}/>}
+                        {image && <img src={imgSrc} alt="" width={150}/>}
                         </div>
                     </div>
                     <div className="d-flex py-3 align-items-center justify-content-sm-center justify-content-lg-end ">
-                            <button
-                            className="btn mx-4 px-4 py-2 display-4 border-0"
-                            >Add User</button>
+                            <button className="btn mx-4 px-4 py-2 display-4 border-0">Add User</button>
                     </div>
                 </div>
             </form>

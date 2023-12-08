@@ -1,17 +1,31 @@
+import { useState } from 'react';
 import './Project.css';
 export default function AddProject(){
+    const [title, setTitle] = useState('');
+    const [type, setType] = useState('');
+    const [start_date, setStart_date] = useState('');
+    const [end_date, setEnd_date] = useState('');
+    const [description, setDescription] = useState('');
+    // const [status, setStatus] = useState('');
+    // const [image, setImage] = useState('');
+    // const [team, setTeam] = useState([]);
+
     return (
         <div className="RA-bgBlue">
             <h1 className="RA-HeaderStyle">Projects / Create Project</h1>
 
-            <div className="RA-bgWhite RA-MarginBox">
+            <form className="RA-bgWhite RA-MarginBox">
                 <div className="d-flex row justify-content-center">
                     <div className="form-group col-lg-4 col-md-6 col-sm-12">
                         <div
                             className="d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                             <label htmlFor="fn" className="RA-Label ps-2">Project Title</label>
                             <input type="email" className="form-control ms-2 mt-3 d-flex" id="fn"
-                                   aria-describedby="emailHelp" required>
+                                aria-describedby="emailHelp"
+                                required
+                                value={title}
+                                onChange={(e) => setTitle(e.target.value)}
+                                >
                             </input>
                         </div>
                     </div>
@@ -20,7 +34,11 @@ export default function AddProject(){
                             className=" d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                             <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2"> Project Type</label>
                             <input type="text" className="form-control  mt-3 " id="ln"
-                                   aria-describedby="emailHelp" required>
+                                aria-describedby="emailHelp" 
+                                required
+                                value={type}
+                                onChange={(e) => setType(e.target.value)}
+                                >
                             </input>
                         </div>
                     </div>
@@ -28,12 +46,20 @@ export default function AddProject(){
                         <div className="row">
                             <div className="col-md-6 d-flex flex-column align-items-lg-start align-items-center bg-white colorBlack">
                                 <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2">Start Date</label>
-                                <input type="date" className="form-control  mt-3 " required>
+                                <input type="date" className="form-control  mt-3 " 
+                                    required
+                                    value={start_date}
+                                    onChange={(e) => setStart_date(e.target.value)}
+                                    >
                                 </input>
                             </div>
                             <div className="col-md-6 d-flex flex-column align-items-lg-start align-items-center">
                                 <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2">End Date</label>
-                                <input type="date" className="form-control mt-3 " required>
+                                <input type="date" className="form-control mt-3 " 
+                                    required
+                                    value={end_date}
+                                    onChange={(e) => setEnd_date(e.target.value)}
+                                    >
                                 </input>
                             </div>
                         </div>
@@ -55,7 +81,11 @@ export default function AddProject(){
                     <div
                         className="d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                         <label htmlFor="fn" className="RA-Label ps-2">Project Description</label>
-                        <input type="email" className="form-control d-flex w-90 ms-2 h-6 RA-borderRadius" id="fn" required/>
+                        <input type="email" className="form-control d-flex w-90 ms-2 h-6 RA-borderRadius" id="fn" 
+                            required
+                            value={description}
+                            onChange={(e) => setDescription(e.target.value)}
+                            />
 
                     </div>
                 </div>
@@ -98,7 +128,7 @@ export default function AddProject(){
                     <button className="btn mx-2 px-1 py-1 fs-5">Create</button>
                     <button className="btn colorOrange RA-bgLightBlue fs-5 px-1 py-1">Delete</button>
                 </div>
-            </div>
+            </form>
         </div>
     )
 
