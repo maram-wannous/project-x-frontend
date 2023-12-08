@@ -46,15 +46,16 @@ export default function AddUser() {
                 country: country,
                 designation: designation,
                 department: department,
-                image: image,
+                // image: image,
             },{
                 headers: {
+                    Accept: 'application/json',
                     AUTHORIZATION: `Bearer ${token}`,
                 }
             });
             setLoading(false);
             console.log(res);
-            window.location.pathname= '/dashboard/users';
+            // window.location.pathname= '/dashboard/users';
         }catch(err){
             setLoading(false);
             console.log(err);

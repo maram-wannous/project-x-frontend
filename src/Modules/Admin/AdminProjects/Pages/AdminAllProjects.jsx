@@ -24,8 +24,8 @@ export const AdminAllProjects = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 8,
+          slidesToScroll: 2,
           infinite: true,
           dots: true
         }
@@ -33,9 +33,9 @@ export const AdminAllProjects = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1
+          slidesToShow: 8,
+          slidesToScroll: 2,
+          // initialSlide: 1
         }
       },
       {
@@ -56,9 +56,16 @@ export const AdminAllProjects = () => {
       </div>
 
       <Slider {...settings} className='sa_containerSlideAllProjects'>
-      <div className='sa_AdminAllProjects_BodyDiv'>
-          <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
-          <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
+          <div className='sa_AdminAllProjects_BodyDiv'>
+            <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
+            <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
+            <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
+            <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
+            <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
+            <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
+          </div>
+          
+          {/* <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
           <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
           <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
           <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link>
@@ -85,7 +92,7 @@ export const AdminAllProjects = () => {
           <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link> 
           <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link> 
           <Link to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin} /></Link> 
-        </div>
+        </div> */}
       </Slider>
     </div>
   )
