@@ -1,0 +1,11 @@
+.mr-loading-container {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(154, 160, 167, 0.8);
+    top: 0;
+    z-index: 11;
+}

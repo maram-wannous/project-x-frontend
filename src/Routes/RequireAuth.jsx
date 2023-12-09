@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Navigate, Outlet } from "react-router-dom";
-import { HashLoader } from "react-spinners";
 import Error403 from "./Error403";
+import Loading from "./Loading";
 
 export default function RequireAuth({allowedRole}) {
 
@@ -14,7 +14,7 @@ export default function RequireAuth({allowedRole}) {
 
     
     return(
-        token ? user === "" ? (<HashLoader color="#36d7b7" />) : 
+        token ? user === "" ? (<Loading/>) : 
         user.role === allowedRole? 
         (<Outlet />) :
         (<Error403 />)

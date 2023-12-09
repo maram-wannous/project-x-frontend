@@ -1,5 +1,4 @@
 import App from "../App"
-import Error403 from "./Error403";
 // import RequireAuth from "./RequireAuth";
 import Dashboard from "../Modules/Dashboard/Pages/Dashboard"
 import Home from "../Modules/Dashboard/Pages/Home"
@@ -23,10 +22,11 @@ import UserProjects from "../Modules/User/Projects/Pages/UserProjects";
 import ProjectDetails from "../Modules/User/Projects/Pages/ProjectDetails";
 import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects.jsx";
 import PerformancePage from "../Modules/Performance/Pages/PerformancePage.jsx";
+import { Navigate } from "react-router-dom";
+import AdminProjectDetails from "../Modules/Admin/AdminProjects/Pages/AdminProjectDetails.jsx";
 
-const isAuthenticated= true;
+const isAuthenticated= localStorage.getItem('bearer');
 
-// const isAuthenticated = localStorage.getItem('user');
 export const routes = [
     {
         path: '/',
@@ -37,7 +37,7 @@ export const routes = [
         element: <GuardedRoutes
                 isAccessable={isAuthenticated}
                 OnSucess={() => <Dashboard />}
-                OnFaild={() => <Error403 />}/>
+                OnFaild={() => <Navigate to={'/'} replace={true}/>}/>
         ,
         children: [
             {
@@ -74,8 +74,12 @@ export const routes = [
                 element: <AddProject/>,
             },
             {
-                path: 'adminprojects/update',
+                path: 'adminprojects/update/:id',
                 element: <UpdateProject/>,
+            },
+            {
+                path: 'adminprojects/details/1',
+                element: <AdminProjectDetails/>,
             },
             {
                 path: 'tasks',
@@ -102,7 +106,7 @@ export const routes = [
                 element: <AddUser/>,
             },
             {
-                path: 'users/update',
+                path: 'users/id',
                 element: <UpdateUser/>,
             },
 

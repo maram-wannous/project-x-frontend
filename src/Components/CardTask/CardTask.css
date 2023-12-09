@@ -142,3 +142,7 @@
     opacity: 0;
     display: none !important;
 }
+.mr-delet-task {
+    cursor: pointer;
+    color: red;
+}

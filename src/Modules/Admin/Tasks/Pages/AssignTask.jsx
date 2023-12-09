@@ -12,7 +12,7 @@ export default function AssignTask() {
                             className="d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                             <label htmlFor="fn" className="RA-Label ps-2">SubTask Title</label>
                             <input type="email" className="form-control ms-2 mt-3 d-flex" id="fn"
-                                   aria-describedby="emailHelp">
+                                   aria-describedby="emailHelp" required>
                             </input>
                         </div>
                     </div>
@@ -21,7 +21,7 @@ export default function AssignTask() {
                             className=" d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                             <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2"> SubTask Status</label>
                             <input type="text" className="form-control  mt-3 " id="ln"
-                                   aria-describedby="emailHelp">
+                                   aria-describedby="emailHelp" required>
                             </input>
                         </div>
                     </div>
@@ -29,12 +29,12 @@ export default function AssignTask() {
                         <div className="row">
                             <div className="col-md-6 d-flex flex-column align-items-lg-start align-items-center">
                                 <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2">Start Date</label>
-                                <input type="date" className="form-control  mt-3 ">
+                                <input type="date" className="form-control  mt-3 " required>
                                 </input>
                             </div>
                             <div className="col-md-6 d-flex flex-column align-items-lg-start align-items-center">
                                 <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2">End Date</label>
-                                <input type="date" className="form-control mt-3 ">
+                                <input type="date" className="form-control mt-3 " required>
                                 </input>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ export default function AssignTask() {
                     <div
                         className="d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                         <label htmlFor="fn" className="RA-Label ps-2">SubTask Description</label>
-                        <input type="email" className="form-control d-flex w-100 ms-2 h-6 RA-borderRadius" id="fn"/>
+                        <input type="email" className="form-control d-flex w-100 ms-2 h-6 RA-borderRadius" id="fn" required/>
 
                     </div>
                 </div>

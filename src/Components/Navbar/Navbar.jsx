@@ -6,12 +6,25 @@ import person_pic from "././../../assets/person_pic.png";
 import noti_pic1 from "././../../assets/noti_pic1.png";
 import noti_pic2 from "././../../assets/noti_pic2.png";
 import noti_pic3 from "././../../assets/noti_pic3.png";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export default function Navbar(){
-    
+    const [user, setUser] = useState([]);
     const [open, setOpen] = useState(false);
+    const navigate = useNavigate();
+    const token = localStorage.getItem('bearer');
+
+    useEffect(() => {
+        axios.get('http://127.0.0.1:8000/api/Admin/profile', {
+            headers: {
+                AUTHORIZATION: `Bearer ${token}`,
+            }
+        })
+        .then((data)=> {setUser(data.data)})
+        .catch(() => navigate(("/"), {replace: true}));
+    },[]);
 
     return (
     <nav className="px-4 py-2 d-flex justify-content-between align-items-center  gap-3 bg-white position-fixed top-0 left-0 sa-nav">
@@ -55,8 +68,8 @@ export default function Navbar(){
                 </div>
             </div>
             <div className="d-flex flex-column justify-content-center align-items-end gap-1">
-                <Link to={'/dashboard/profile'}><p className="sa_name">Anima Agrawal</p></Link>
-                <p className="sa_info">U.P, India</p>
+                <Link to={'/dashboard/profile'}><p className="sa_name">{user.first_name} {user.last_name}</p></Link>
+                <p className="sa_info">{user.designation}, {user.address}</p>
             </div>
             <div>
                 <img className="sa_personPic" src={person_pic} alt="person" />
