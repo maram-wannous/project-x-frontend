@@ -12,14 +12,13 @@ import axios from "axios";
 
 export default function Sidbar() {
     const [currentUser, setCurrentUser] = useState("");
-    const [isAdmin, setIsAdmin] = useState(false);
+    
     const [isOpen,setIsOpen] = useState(false);
     const [windowSize, setWindowSize] = useState({
         width: undefined
       });
 
-      console.log(currentUser.email);
-      console.log(isAdmin);
+      
       useEffect(() => {
         function handleResize() {
           setWindowSize({
@@ -44,13 +43,7 @@ export default function Sidbar() {
                 AUTHORIZATION: `Bearer ${token}`,
             }
         })
-        .then((data)=> {setCurrentUser(data.data);
-        if (currentUser.email === "admin@gmail.com") {
-            setIsAdmin(true);
-        }else{
-            setIsAdmin(false)
-        }
-        });
+        .then((data)=> setCurrentUser(data.data));
       },[]);
     
 
