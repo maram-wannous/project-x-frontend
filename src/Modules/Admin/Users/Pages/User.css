@@ -80,6 +80,10 @@
 .fontSize2Rem{
     font-size: 2rem;
 }
+.mr-delete-admin {
+    color: initial;
+    cursor: auto;
+}
 
 .RA-table-icon {
     cursor: pointer;
