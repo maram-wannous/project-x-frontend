@@ -18,7 +18,7 @@ export const CardProject = ({isAdmin, id, title, end_date, description, status})
             <p className='sa_buttOfftrack'>{status}</p>
         </div>
         <div className='pt-4 pb-4 px-2 sa_CardText'>
-            <p className='mb-0'>{description}</p>
+            <p className='mb-0 text-wrap'>{description}</p>
         </div>
         <div className='d-flex align-items-center gap-2 pb-3'>
             <BsHourglassBottom className='sa_BsHourglassBottom'/>
