@@ -8,7 +8,6 @@ import axios from 'axios';
 
 export default function ViewUsers() {
     const [users, setUsers] = useState([]);
-    const [noUsers, setNoUsers] = useState(false);
     const [currentUser, setCurrentUser] = useState("");
     const [deleteUser, setDeleteUser] = useState(false);
 
@@ -34,7 +33,6 @@ export default function ViewUsers() {
                 },
         })
         .then((data)=> setUsers(data.data.users))
-        .then(()=> setNoUsers(true))
         .catch((err)=> console.log(err));
     },[deleteUser]);
 
@@ -100,11 +98,6 @@ export default function ViewUsers() {
                             (<tr>
                                 <td colSpan={12}className="text-center">Loading...</td>
                             </tr>)
-                            : users.length === 0 && noUsers ? (
-                            <tr>
-                                <td colSpan={12}className="text-center">No Users Found</td>
-                            </tr>
-                            )
                             : (usersShow)}
                         </tbody>
                     </table>

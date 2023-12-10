@@ -78,7 +78,7 @@ export const routes = [
                 element: <UpdateProject/>,
             },
             {
-                path: 'adminprojects/details/1',
+                path: 'adminprojects/details/:id',
                 element: <AdminProjectDetails/>,
             },
             {
@@ -106,7 +106,7 @@ export const routes = [
                 element: <AddUser/>,
             },
             {
-                path: 'users/id',
+                path: 'users/:id',
                 element: <UpdateUser/>,
             },
 
