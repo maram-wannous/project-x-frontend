@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import './User.css';
 import Profile from '../../../../assets/Foto.png';
-import { useNavigate} from 'react-router-dom';
 import { FaUpload } from 'react-icons/fa';
 import { useState } from 'react';
 import axios from 'axios';
@@ -22,7 +21,6 @@ export default function AddUser() {
     const [image, setImage] = useState(null);
     const [imgSrc, setImgSrc] = useState("")
     const [loading, setLoading] = useState(false);
-    const navigate = useNavigate();
     const token = localStorage.getItem('bearer');
 
 

@@ -1,4 +1,24 @@
-.sa_titleAllProjects {
+.mr-project-paginat li a {
+color: #FF8500;
+}
+.mr-project-paginat li a:hover {
+color: #FF8500;
+}
+.mr-project-paginat li.active a{
+    border-color: #FF8500;
+    background-color: #FF8500;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* .sa_titleAllProjects {
     color: #0E2040;
     font-family: Nunito;
     font-size: 3.575rem;
@@ -114,4 +134,4 @@
         top: 98.7% !important;
         right: 38% !important;
     }
-}
+} */
