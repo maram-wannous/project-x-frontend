@@ -8,13 +8,17 @@ import { CgPerformance } from "react-icons/cg";
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
 
 import {  useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Sidbar() {
-
+    const [currentUser, setCurrentUser] = useState("");
+    
     const [isOpen,setIsOpen] = useState(false);
     const [windowSize, setWindowSize] = useState({
         width: undefined
       });
+
+      
       useEffect(() => {
         function handleResize() {
           setWindowSize({
@@ -28,6 +32,21 @@ export default function Sidbar() {
     
         return () => window.removeEventListener("resize", handleResize);
       }, []);
+
+      const token = localStorage.getItem('bearer');
+
+    //get user
+    useEffect(() => {
+        axios.get('http://127.0.0.1:8000/api/Admin/profile', {
+            headers: {
+                Accept: 'application/json',
+                AUTHORIZATION: `Bearer ${token}`,
+            }
+        })
+        .then((data)=> setCurrentUser(data.data));
+      },[]);
+    
+
 
     return (
             <div className="sa_sidebar bg-white pt-5"

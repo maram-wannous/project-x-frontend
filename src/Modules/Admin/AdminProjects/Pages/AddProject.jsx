@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 import './Project.css';
-export default function AddProject(){
+export default function AddProject() {
     const [title, setTitle] = useState('');
     const [type, setType] = useState('');
     const [start_date, setStart_date] = useState('');
@@ -9,7 +10,42 @@ export default function AddProject(){
     // const [status, setStatus] = useState('');
     // const [image, setImage] = useState('');
     // const [team, setTeam] = useState([]);
+    const [users, setUsers] = useState([]);
+    const token = localStorage.getItem('bearer');
 
+    async function HandleSubmite(e) {
+        setLoading(true);
+        e.preventDefault();
+        try {
+            const res = await axios.post('http://127.0.0.1:8000/api/users', {
+                title: title,
+                type: type,
+                start_date: start_date,
+                end_date: end_date,
+                description: description,
+            }, {
+                headers: {
+                    Accept: 'application/json',
+                    AUTHORIZATION: `Bearer ${token}`,
+                }
+            });
+            setLoading(false);
+            window.location.pathname = '/dashboard/adminprojects';
+        } catch (err) {
+            setLoading(false);
+            console.log(err);
+        }
+    }
+    useEffect(() => {
+        axios.get('http://127.0.0.1:8000/api/getUsers', {
+            headers: {
+                Accept: 'application/json',
+                AUTHORIZATION: `Bearer ${token}`,
+            },
+        })
+            .then((data) => console.log(data))
+            .catch((err) => console.log(err));
+    }, []);
     return (
         <div className="RA-bgBlue">
             <h1 className="RA-HeaderStyle">Projects / Create Project</h1>
@@ -25,7 +61,7 @@ export default function AddProject(){
                                 required
                                 value={title}
                                 onChange={(e) => setTitle(e.target.value)}
-                                >
+                            >
                             </input>
                         </div>
                     </div>
@@ -34,11 +70,11 @@ export default function AddProject(){
                             className=" d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                             <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2"> Project Type</label>
                             <input type="text" className="form-control  mt-3 " id="ln"
-                                aria-describedby="emailHelp" 
+                                aria-describedby="emailHelp"
                                 required
                                 value={type}
                                 onChange={(e) => setType(e.target.value)}
-                                >
+                            >
                             </input>
                         </div>
                     </div>
@@ -46,20 +82,20 @@ export default function AddProject(){
                         <div className="row">
                             <div className="col-md-6 d-flex flex-column align-items-lg-start align-items-center bg-white colorBlack">
                                 <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2">Start Date</label>
-                                <input type="date" className="form-control  mt-3 " 
+                                <input type="date" className="form-control  mt-3 "
                                     required
                                     value={start_date}
                                     onChange={(e) => setStart_date(e.target.value)}
-                                    >
+                                >
                                 </input>
                             </div>
                             <div className="col-md-6 d-flex flex-column align-items-lg-start align-items-center">
                                 <label htmlFor="ln" className="RA-Label RA-fsLabel ps-2">End Date</label>
-                                <input type="date" className="form-control mt-3 " 
+                                <input type="date" className="form-control mt-3 "
                                     required
                                     value={end_date}
                                     onChange={(e) => setEnd_date(e.target.value)}
-                                    >
+                                >
                                 </input>
                             </div>
                         </div>
@@ -81,11 +117,11 @@ export default function AddProject(){
                     <div
                         className="d-flex flex-column align-items-xl-start align-items-lg-start align-items-center">
                         <label htmlFor="fn" className="RA-Label ps-2">Project Description</label>
-                        <input type="email" className="form-control d-flex w-90 ms-2 h-6 RA-borderRadius" id="fn" 
+                        <input type="email" className="form-control d-flex w-90 ms-2 h-6 RA-borderRadius" id="fn"
                             required
                             value={description}
                             onChange={(e) => setDescription(e.target.value)}
-                            />
+                        />
 
                     </div>
                 </div>
@@ -102,22 +138,22 @@ export default function AddProject(){
                             <div className="accordion-body">
                                 <table className="table table-hover">
                                     <tbody>
-                                    <tr>
-                                        <th scope="row">Yash</th>
-                                        <td>Team Lead</td>
-                                        <td><input type="checkbox"/></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Yash</th>
-                                        <td>Team Lead</td>
-                                        <td><input type="checkbox"/></td>
+                                        <tr>
+                                            <th scope="row">Yash</th>
+                                            <td>Team Lead</td>
+                                            <td><input type="checkbox" /></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Yash</th>
+                                            <td>Team Lead</td>
+                                            <td><input type="checkbox" /></td>
 
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Yash</th>
-                                        <td>Team Lead</td>
-                                        <td><input type="checkbox"/></td>
-                                    </tr>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Yash</th>
+                                            <td>Team Lead</td>
+                                            <td><input type="checkbox" /></td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import {RiDeleteBin5Fill} from 'react-icons/ri'
 import {BiPencil} from 'react-icons/bi'
@@ -8,9 +9,23 @@ import axios from 'axios';
 export default function ViewUsers() {
     const [users, setUsers] = useState([]);
     const [noUsers, setNoUsers] = useState(false);
+    const [currentUser, setCurrentUser] = useState("");
+    const [deleteUser, setDeleteUser] = useState(false);
+
     const token = localStorage.getItem('bearer');
 
+    //get user
+    useEffect(() => {
+        axios.get('http://127.0.0.1:8000/api/Admin/profile', {
+            headers: {
+                Accept: 'application/json',
+                AUTHORIZATION: `Bearer ${token}`,
+            }
+        })
+        .then((data)=> setCurrentUser(data.data));
+      },[]);
 
+    //   get all users
     useEffect(()=>{
         axios.get('http://127.0.0.1:8000/api/users', {
             headers: {
@@ -21,12 +36,24 @@ export default function ViewUsers() {
         .then((data)=> setUsers(data.data.users))
         .then(()=> setNoUsers(true))
         .catch((err)=> console.log(err));
-    },[]);
+    },[deleteUser]);
 
     //handeling delete
-    // async function handleDeleteUser(id) {
-        
-    // }
+    async function handleDeleteUser(id) {
+        if (currentUser.id !== id){
+        try{
+            const res = await axios.delete(`http://127.0.0.1:8000/api/users/${id}`,{
+                headers: {
+                    Accept: 'application/json',
+                    AUTHORIZATION: `Bearer ${token}`,
+                    },
+            });
+            setDeleteUser((prev)=> !prev);
+        }catch(err){
+            console.log(err);
+        }
+        }
+    }
 
     const usersShow = users.map((item, key) => (
         <tr key={key} className="py-5 align-middle fw-normal">
@@ -39,8 +66,8 @@ export default function ViewUsers() {
             <td>
                 <div className="d-flex align-items-center gap-3">
                     <Link to={`/dashboard/users/${item.id}`}><BiPencil className="colorGreen RA-table-icon"/></Link>
-                    <RiDeleteBin5Fill className="colorRed RA-table-icon"
-                        // onClick={() => handleDeleteUser(item.id)}
+                    <RiDeleteBin5Fill className={currentUser.id===item.id?"mr-delete-admin": "colorRed RA-table-icon"}
+                        onClick={() => handleDeleteUser(item.id)}
                     />
                 </div>
             </td>

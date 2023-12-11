@@ -55,9 +55,12 @@ export default function UserTasks() {
             </div>
             <Slider {...settings} className='sa_containerSlideAllProjects'>
                 <div className='sa_bodyBox bg-transparent'>
+                    
                     <div className='sa_backTask'>
                         <CardTask isAdmin={isAdmin} />
                     </div>
+
+
                     <div className='sa_backTask'>
                         <CardTask isAdmin={isAdmin} />
                     </div>

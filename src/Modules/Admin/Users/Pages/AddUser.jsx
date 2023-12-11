@@ -25,6 +25,7 @@ export default function AddUser() {
     const navigate = useNavigate();
     const token = localStorage.getItem('bearer');
 
+
     const handleUploadImage = (file) => {
         const url = URL.createObjectURL(file);
         setImage(file);
@@ -47,13 +48,14 @@ export default function AddUser() {
                 designation: designation,
                 department: department,
                 image: image,
+                onteak: 1,
             },{
                 headers: {
+                    Accept: 'application/json',
                     AUTHORIZATION: `Bearer ${token}`,
                 }
             });
             setLoading(false);
-            console.log(res);
             window.location.pathname= '/dashboard/users';
         }catch(err){
             setLoading(false);

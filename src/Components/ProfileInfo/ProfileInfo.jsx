@@ -26,7 +26,7 @@ export default function ProfileInfo({pageProfile}) {
               AUTHORIZATION: `Bearer ${token}`,
           }
       })
-      .then((data)=> { setUser(data.data) })
+      .then((data)=> setUser(data.data))
       .catch(() => navigate(("/"), {replace: true}));
     },[]);
 
