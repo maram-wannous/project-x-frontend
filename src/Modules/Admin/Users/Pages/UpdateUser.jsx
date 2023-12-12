@@ -27,6 +27,7 @@ export default function UpdateUser(){
 
     // get user id
     const id = Number(window.location.pathname.replace("/dashboard/users/", ""));
+    console.log(id);
 
     const handleUploadImage = (file) => {
         const url = URL.createObjectURL(file);
@@ -37,12 +38,14 @@ export default function UpdateUser(){
 
       // get user info
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/Admin/profile', {
+        axios.get(`http/127.0.0.1:8000/api/users/${id}`, {
             headers: {
+                Accept: 'application/json',
                 AUTHORIZATION: `Bearer ${token}`,
             }
         })
-        .then((data)=> setUser(data.data));
+        .then((data)=> console.log(data))
+        .catch((err) => console.log(err));
     },[]);
 
     // handle update user
@@ -50,7 +53,7 @@ export default function UpdateUser(){
         setLoading(true);
         e.preventDefault();
         try{
-            const res = await axios.post(`http://127.0.0.1:8000/api/users/${id}`,{
+            const res = await axios.put(`http://127.0.0.1:8000/api/users/${id}`,{
                 first_name: first_name,
                 last_name: last_name,
                 email: email,
@@ -65,6 +68,7 @@ export default function UpdateUser(){
                 onteak: 1,
             },{
                 headers: {
+                    'Content-Type': 'multipart/form-data',
                     Accept: 'application/json',
                     AUTHORIZATION: `Bearer ${token}`,
                 }

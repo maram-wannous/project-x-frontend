@@ -7,7 +7,7 @@ import { MdOutlineInsertComment } from "react-icons/md";
 import { CiCalendar } from "react-icons/ci";
 import { RiDeleteBin5Fill } from 'react-icons/ri';
 
-export const CardTask = ({isAdmin}) => {
+export const CardTask = ({isAdmin, title, description, user_id, priority, status, start_date, end_date}) => {
 
     return (
         <div className='sa_CardTask'>
@@ -15,11 +15,11 @@ export const CardTask = ({isAdmin}) => {
                 <div className='d-flex align-items-center gap-2'>
                     <HiOutlineLightBulb className='sa_lamp' />
                     <div>
-                        <p className='sa_titleTaskCard mb-0 '>Make an Automatic Payment System that enable the design</p>
+                        <p className='sa_titleTaskCard mb-0 '>{title}</p>
                         <div className='d-flex align-items-center gap-2 flex-wrap'>
-                            <p className='mb-0 sa_TextP'>#402235  Opened 10 days ago by <span className='sa_TextSpan'>Yash Ghori</span></p>
-                            <p className='sa_btnType mb-0'>High</p>
-                            <p className='sa_btnStatus mb-0'>Pending</p>
+                            <p className='mb-0 sa_TextP'>#{description} <span className='sa_TextSpan'>{user_id}</span></p>
+                            <p className='sa_btnType mb-0'>{priority}</p>
+                            <p className='sa_btnStatus mb-0'>{status}</p>
                         </div>
                     </div>
                 </div>
@@ -28,14 +28,14 @@ export const CardTask = ({isAdmin}) => {
                         <p className='sa_DateTextUserProjects mb-0'>Start Date</p>
                         <div className='d-flex gap-1 sa-startdate'>
                             <CiCalendar className='sa_IconBtnKanban' />
-                            <p className='sa_DateTextUserProjects mb-0'>25/3/2023</p>
+                            <p className='sa_DateTextUserProjects mb-0'>{start_date}</p>
                         </div>
                     </div>
                     <div>
                         <p className='sa_DateTextUserProjects mb-0'>End Date</p>
                         <div className='d-flex gap-1 sa-enddate'>
                             <CiCalendar className='sa_IconBtnKanban' />
-                            <p className='sa_DateTextUserProjects mb-0'>25/3/2023</p>
+                            <p className='sa_DateTextUserProjects mb-0'>{end_date}</p>
                         </div>
                     </div>
                 </div>
