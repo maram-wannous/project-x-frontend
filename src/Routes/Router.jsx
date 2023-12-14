@@ -27,6 +27,7 @@ import AdminProjectDetails from "../Modules/Admin/AdminProjects/Pages/AdminProje
 
 const isAuthenticated= localStorage.getItem('bearer');
 
+
 export const routes = [
     {
         path: '/',
@@ -41,90 +42,90 @@ export const routes = [
         ,
         children: [
             {
-                path: '',
+                path: '/dashboard/',
                 element: <Home/>,
             },
             {
-                path: 'profile',
+                path: '/dashboard/profile',
                 element: <Profile/>,
             },
             {
-                path: 'profile/updateprofile',
+                path: '/dashboard/profile/updateprofile',
                 element: <UpdateProfile/>,
             },
             {
-                path: 'performance',
+                path: '/dashboard/performance',
                 element: <PerformancePage/>,
             },
             {
-                path: 'worklog',
+                path: '/dashboard/worklog',
                 element: <WorkLog/>,
             },
             // Admin pages
             {
-                path: 'adminprojects',
+                path: '/dashboard/adminprojects',
                 element: <AdminProjects/>,
             },
             {
-                path: 'adminprojects/projects',
+                path: '/dashboard/adminprojects/projects',
                 element: <AdminAllProjects/>,
             },
             {
-                path: 'adminprojects/add',
+                path: '/dashboard/adminprojects/add',
                 element: <AddProject/>,
             },
             {
-                path: 'adminprojects/update/:id',
+                path: '/dashboard/adminprojects/update/:id',
                 element: <UpdateProject/>,
             },
             {
-                path: 'adminprojects/details/:id',
+                path: '/dashboard/adminprojects/details/:id',
                 element: <AdminProjectDetails/>,
             },
             {
-                path: 'tasks',
+                path: '/dashboard/tasks',
                 element: <AdminTasks/>,
             },
             {
-                path: 'tasks/subtask',
+                path: '/dashboard/tasks/subtask',
                 element: <AdminSubTask/>,
             },
             {
-                path: 'tasks/assigntask',
+                path: '/dashboard/tasks/assigntask',
                 element: <AssignTask/>,
             },
             {
-                path: 'tasks/assignsubtask',
+                path: '/dashboard/tasks/assignsubtask',
                 element: <AssignSubTask/>,
             },
             {
-                path: 'users',
+                path: '/dashboard/users',
                 element: <ViewUsers/>,
             },
             {
-                path: 'users/add',
+                path: '/dashboard/users/add',
                 element: <AddUser/>,
             },
             {
-                path: 'users/:id',
+                path: '/dashboard/users/:id',
                 element: <UpdateUser/>,
             },
 
             // User Pages
             {
-                path: 'usertasks',
+                path: '/dashboard/usertasks',
                 element: <UserTasks/>,
             },
             {
-                path: 'usertasks/subtask',
+                path: '/dashboard/usertasks/subtask',
                 element: <UserSubTask/>,
             },
             {
-                path: 'userprojects',
+                path: '/dashboard/userprojects',
                 element: <UserProjects/>,
             },
             {
-                path: 'userprojects/details',
+                path: '/dashboard/userprojects/details',
                 element: <ProjectDetails/>,
             },
 

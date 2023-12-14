@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const AdminProjects_Projects = () => {
     return (
         <div className='bg-white p-2 sa_AdminProjects_ProjectDiv'>
-            <div className='d-flex align-items-center justify-content-between pb-4'>
+            <div className='d-flex align-items-center justify-content-between pb-4 flex-wrap'>
                 <p className='sa_AdminProjects_ProjectsTitle'>Projects</p>
                 <Link to={'/dashboard/adminprojects/projects'}>
                     <button className='sa_AdminProjects_ProjectsViweAll'>View all</button>

@@ -82,7 +82,7 @@ export default function ProfileInfo({pageProfile}) {
           </li>
           <li className='mr-line'></li>
           {
-            pageProfile && (<li><Link to={'/dashboard/profile/updateprofile'} className='mr-up-del-btn'>Update Profile</Link></li>)
+            pageProfile && user.email==="admin@gmail.com" && (<li><Link to={'/dashboard/profile/updateprofile'} className='mr-up-del-btn'>Update Profile</Link></li>)
           }
           <li><button className='mr-up-del-btn mt-3' onClick={handleLogout}>Logout</button></li>
         </ul>

@@ -83,7 +83,7 @@ export default function Login() {
                             placeholder="Password" />
                         </Form.Group>
                         <Form.Group className="mb-3 mr-check" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Terms & Conditions"/>
+                            <Form.Check type="checkbox" label="Terms & Conditions" required/>
                         </Form.Group>
                         <div className="d-grid mr-login-btn">
                             <button type="submit" size="lg">

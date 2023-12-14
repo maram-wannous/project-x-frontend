@@ -8,12 +8,13 @@
 }
 .sl-projects .mr-profilproject {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.mr-profileprojectcontent {
+.sl-projects .mr-profileprojectcontent {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }

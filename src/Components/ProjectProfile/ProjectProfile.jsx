@@ -7,7 +7,7 @@ export default function ProjectProfile() {
 
   return (
     <div className="sl-projects">
-      <div className="mr-profilproject">
+      <div className="mr-profilproject flex-wrap">
         <p className="fw-bold">Projects</p>
         <button className="btn">View all</button>
       </div>

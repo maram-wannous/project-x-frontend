@@ -5,7 +5,6 @@ import Performance from "../../../Components/Performance/Performance.jsx";
 import "./Dashboard.css";
 import '../../../Components/TaskDash/TaskDash.css';
 import '../../../Components/Performance/Performance.css';
-// import '../../../Components/WorkLog/WorkLog.css'
 
 
 
@@ -16,14 +15,14 @@ export default function Home() {
                 <h1 className='header-style' >Dashboard</h1>
             </div>
 
-            <div>
+            <div  className="py-2">
                 <div className="row px-4">
                     <div className="col-md-6 mt-2">
                         <ProjectDash/>
                     </div>
                     <div className="col-md-6 mt-2">
-                        <div className="RA-bgBlue">
-                            <div className="RA-bgWhite RA-MarginBoxProj">
+                        <div className="RA-bgBlue mr-width-chart-home">
+                            <div className="RA-bgWhite RA-MarginBoxProj w-100 h-100">
                                 <h1 className="RA-HeaderStyle colorBlack">Tasks</h1>
                                 <div className="text-center d-flex justify-content-center ">
                                     <div className="w-71">

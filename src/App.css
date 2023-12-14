@@ -59,3 +59,26 @@ ul {
 .RA-Width-fit{
     width:fit-content !important;
 }
+
+.mr-pagination-containers{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+@media(max-width: 500px) {
+    .pagination {
+        width: 300px;
+    }
+    .pagination .page-link{
+        font-size: x-small;
+    }
+    .pagination .page-item {
+        font-size:x-small;
+    }
+}

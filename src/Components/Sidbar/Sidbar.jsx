@@ -55,7 +55,7 @@ export default function Sidbar() {
                 }}
             >
                    
-                    <NavLink to='/dashboard' className="d-flex align-items-center gap-2 sa_textSidbar"
+                    <NavLink to='/dashboard/' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <BiSolidHome />
@@ -63,7 +63,7 @@ export default function Sidbar() {
                         style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Home</p>
                     </NavLink>
-                    <NavLink to={currentUser.email==="admin@gmail.com"?'adminprojects': 'userprojects'} className="d-flex align-items-center gap-2 sa_textSidbar"
+                    <NavLink to={currentUser.email==="admin@gmail.com"?'/dashboard/adminprojects': '/dashboard/userprojects'} className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <RiProjectorFill />
@@ -71,7 +71,7 @@ export default function Sidbar() {
                         style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Projects</p>
                     </NavLink>
-                    <NavLink to={currentUser.email==="admin@gmail.com"?'tasks': 'usertasks'} className="d-flex align-items-center gap-2 sa_textSidbar"
+                    <NavLink to={currentUser.email==="admin@gmail.com"?'/dashboard/tasks': '/dashboard/usertasks'} className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <FaTasks />
@@ -79,7 +79,7 @@ export default function Sidbar() {
                         style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Tasks</p>
                     </NavLink>
-                    <NavLink to='worklog' className="d-flex align-items-center gap-2 sa_textSidbar"
+                    <NavLink to='/dashboard/worklog' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <GoProjectRoadmap />
@@ -87,7 +87,7 @@ export default function Sidbar() {
                         style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Work Logs</p>
                     </NavLink>
-                    <NavLink to='performance' className="d-flex align-items-center gap-2 sa_textSidbar"
+                    <NavLink to='/dashboard/performance' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <CgPerformance />
@@ -95,7 +95,7 @@ export default function Sidbar() {
                        style={{display: windowSize.width < 991?(isOpen ? 'block' : 'none'): 'block'}}
                         >Performance</p>
                     </NavLink>
-                    {currentUser.email==="admin@gmail.com" && <NavLink to='users' className="d-flex align-items-center gap-2 sa_textSidbar"
+                    {currentUser.email==="admin@gmail.com" && <NavLink to='/dashboard/users' className="d-flex align-items-center gap-2 sa_textSidbar"
                         style={{padding: isOpen ? '10px 8px 10px 15px': '10px 13px'}}
                     >
                         <FaUsers/>

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import ReactPaginate from 'react-paginate';
 import './AdminAllprojects.css'
@@ -12,6 +13,8 @@ export const AdminAllProjects = () => {
   const isAdmin = true;
   const [pageCount, setPageCount] = useState(0);
   const [projects, setProjects] = useState([]);
+  const [noProjects, setNoProjects] = useState(false)
+
   const token = localStorage.getItem('bearer');
 
   // console.log('pagecount' + pageCount);
@@ -34,6 +37,7 @@ useEffect(()=>{
     // console.log(data.data.projects);
 
   })
+  .then((data) => projects.length === 0 && setNoProjects(true))
   .catch((err)=> console.log(err));
 },[]);
 
@@ -70,14 +74,10 @@ useEffect(()=>{
       </div>
 
       <div className="row p-2">
-           <Link className="col-sm-6 col-md-4 v my-2" to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin}/></Link>
-           <Link className="col-sm-6 col-md-4 v my-2"  to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin}/></Link>
-           <Link className="col-sm-6 col-md-4 v my-2"  to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin}/></Link>
-           <Link className="col-sm-6 col-md-4 v my-2" to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin}/></Link>
-           <Link className="col-sm-6 col-md-4 v my-2" to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin}/></Link>
-           <Link className="col-sm-6 col-md-4 v my-2" to={'/dashboard/adminprojects/details/1'}><CardProject isAdmin={isAdmin}/></Link>
-
         {
+          projects.length === 0 && !noProjects ? <div className='text-center'>Loading...</div>
+          : projects.length === 0 && noProjects ? <div className='text-center'>No Projects Found</div>
+          : 
           projects.map((item, index) => {
             <Link to={`/dashboard/adminprojects/details/${item.id}`} className="col-sm-6 col-md-4 v my-2">
                <CardProject key={index} isAdmin={isAdmin}
@@ -92,12 +92,12 @@ useEffect(()=>{
         }
       </div>
 
-
+      <div className='mr-pagination-containers'>
       <ReactPaginate 
         previousLabel={"previous"}
         nextLabel={"next"}
         breakLabel={"..."}
-        pageCount={6}
+        pageCount={pageCount}
         marginPagesDisplayed={2}
         pageRangeDisplayed={3}
         onPageChange={handlePageClick}
@@ -112,6 +112,7 @@ useEffect(()=>{
         breakLinkClassName={"page-link"}
         activeClassName={"active"}
       />
+      </div>
     </div>
 
   )

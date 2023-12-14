@@ -71,7 +71,7 @@ export default function AddProject() {
         }
     }
     // useEffect(() => {
-    //     axios.get('http/127.0.0.1:8000/api/users/id', {
+    //     axios.get('http/127.0.0.1:8000/api/getUsers', {
     //         headers: {
     //             Accept: 'application/json',
     //             AUTHORIZATION: `Bearer ${token}`,
